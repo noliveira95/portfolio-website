@@ -9,12 +9,19 @@ function Navbar() {
   return (
     <>
       <nav className={styles.navbar}>
-        <Image src={logo} alt="Logo" className={styles.logo} />
-        <div className="navLinks">
-          <Link href="/">Home</Link>
-          <Link href="/">Who Am I</Link>
-          <Link href="/">My Skills</Link>
-          <Link href="/">My Work</Link>
+        <Link href="/">
+          <Image src={logo} alt="Logo" className={styles.logo} />
+        </Link>
+        <div className={styles["nav-links-wrapper"]}>
+          <Link className={styles["nav-link"]} href="/">
+            Who Am I
+          </Link>
+          <Link className={styles["nav-link"]} href="/">
+            My Skills
+          </Link>
+          <Link className={styles["nav-link"]} href="/">
+            My Work
+          </Link>
         </div>
         <button className="btn">
           <DownloadIcon />
