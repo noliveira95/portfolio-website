@@ -1,6 +1,7 @@
 import React from "react";
 import "./navbar.module.css";
 import Image from "next/image";
+import { DownloadIcon } from "@radix-ui/react-icons";
 
 function Navbar() {
   return (
@@ -9,7 +10,7 @@ function Navbar() {
         <Image className="logo" src="" alt="logo" width={128} height={77} />
         <div className="navLinks"></div>
         <button className="btn">
-          <Image className="logo" src="" alt="logo" />
+          <DownloadIcon />
           Download CV
         </button>
       </nav>
