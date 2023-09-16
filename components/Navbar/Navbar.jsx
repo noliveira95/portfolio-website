@@ -3,12 +3,13 @@ import styles from "./Navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { DownloadIcon } from "@radix-ui/react-icons";
+import logo from "../../public/Olive256x256.png";
 
 function Navbar() {
   return (
     <>
       <nav className={styles.navbar}>
-        <Image className="logo" src="" alt="logo" width={128} height={77} />
+        <Image src={logo} alt="Logo" width={48} height={48} />
         <div className="navLinks">
           <Link href="/">Home</Link>
           <Link href="/">Who Am I</Link>
