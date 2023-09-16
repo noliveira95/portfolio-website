@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <>
       <nav className={styles.navbar}>
-        <Image src={logo} alt="Logo" width={48} height={48} />
+        <Image src={logo} alt="Logo" className={styles.logo} />
         <div className="navLinks">
           <Link href="/">Home</Link>
           <Link href="/">Who Am I</Link>
