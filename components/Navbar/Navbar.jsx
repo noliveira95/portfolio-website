@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.module.css";
+import styles from "./Navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { DownloadIcon } from "@radix-ui/react-icons";
@@ -7,7 +7,7 @@ import { DownloadIcon } from "@radix-ui/react-icons";
 function Navbar() {
   return (
     <>
-      <nav className="navbar">
+      <nav className={styles.navbar}>
         <Image className="logo" src="" alt="logo" width={128} height={77} />
         <div className="navLinks">
           <Link href="/">Home</Link>
