@@ -1,5 +1,5 @@
 import React from "react";
-import "./navbar.module.css";
+import "./Navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { DownloadIcon } from "@radix-ui/react-icons";
