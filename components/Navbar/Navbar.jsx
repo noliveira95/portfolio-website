@@ -23,8 +23,8 @@ function Navbar() {
             My Work
           </Link>
         </div>
-        <button className="btn">
-          <DownloadIcon />
+        <button className={styles["nav-btn"]}>
+          <DownloadIcon className={styles["nav-btn-icon"]} color="white" />
           Download CV
         </button>
       </nav>
