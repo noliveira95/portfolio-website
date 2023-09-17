@@ -5,13 +5,13 @@ import Button from "../shared/Button/Button";
 function Hero() {
   return (
     <>
-      <section className="intro">
-        <div className="intro-content">
-          <h2>Hello,</h2>
+      <section className={styles.intro}>
+        <div className={styles["intro-content"]}>
+          <h3>Hello, I&apos;m</h3>
           <h1>
-            I&apos;m <span className="intro-name">Nick</span>
+            <span className={styles["intro-name"]}>Nicholas Oliveira</span>
           </h1>
-          <h1>Web Developer & Designer</h1>
+          <h1>Web Developer & UX Designer</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptatibus quae dolor voluptas animi quia omnis itaque!
