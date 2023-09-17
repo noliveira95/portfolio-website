@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { DownloadIcon } from "@radix-ui/react-icons";
 import logo from "../../public/Olive256x256.png";
+import Button from "../shared/Button/Button";
 
 function Navbar() {
   return (
@@ -23,10 +24,7 @@ function Navbar() {
             My Work
           </Link>
         </div>
-        <button className={styles["nav-btn"]}>
-          <DownloadIcon className={styles["nav-btn-icon"]} color="white" />
-          Download CV
-        </button>
+        <Button />
       </nav>
     </>
   );

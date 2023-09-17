@@ -23,19 +23,3 @@
 .nav-link:hover {
     color: gray;
 }
-
-.nav-btn {
-    background: black;
-    color: white;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 20px;
-}
-
-.nav-btn-icon {
-    margin-right: 8px;
-}
