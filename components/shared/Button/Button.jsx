@@ -1,6 +1,6 @@
 import React from "react";
-import { DownloadIcon } from "@radix-ui/react-icons";
 import styles from "./Button.module.css";
+import { DownloadIcon } from "@radix-ui/react-icons";
 
 function Button() {
   return (
