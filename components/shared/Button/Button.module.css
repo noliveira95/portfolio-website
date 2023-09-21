@@ -1,15 +1,16 @@
 .btn {
-    background: black;
-    color: white;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 20px;
+  background: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 20px;
+  font-family: var(--font-dm-sans);
 }
 
 .btn-icon {
-    margin-right: 8px;
+  margin-right: 8px;
 }
