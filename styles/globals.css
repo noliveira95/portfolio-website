@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -16,9 +15,14 @@ body {
   overflow-y: scroll;
 }
 
+html {
+  font-family: var(--font-dm-sans), "Roboto", sans-serif;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 700;
+  font-family: var(--font-work-sans);
   line-height: 1.2;
   margin-bottom: 1rem;
 }

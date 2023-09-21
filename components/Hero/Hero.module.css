@@ -20,6 +20,7 @@
 .intro-name {
   font-size: 3rem;
   font-weight: 700;
+  font-family: var(--font-work-sans);
   line-height: 1.2;
   margin-bottom: 1rem;
   color: #003190;

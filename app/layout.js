@@ -1,4 +1,17 @@
 import "../styles/globals.css";
+import { Work_Sans, DM_Sans } from "next/font/google";
+
+const workSans = Work_Sans({
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--font-work-sans",
+});
+
+const dmSans = DM_Sans({
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+});
 
 export const metadata = {
   title: "Next.js",
@@ -7,7 +20,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${workSans.variable} ${dmSans.variable}`}>
       <body>{children}</body>
     </html>
   );
