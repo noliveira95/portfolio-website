@@ -8,9 +8,13 @@
 
 .about-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
   max-width: 60rem;
+}
+
+.about-paragraph {
+  padding: 0 40px;
 }
