@@ -5,7 +5,7 @@ import Button from "../shared/Button/Button";
 function Hero() {
   return (
     <>
-      <section className={styles.intro}>
+      <section id={styles.intro}>
         <div className={styles["intro-content"]}>
           <h3>Hello, I&apos;m</h3>
           <h1>
