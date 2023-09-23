@@ -13,8 +13,8 @@ function Hero() {
           </h1>
           <h1>Web Developer & UX Designer</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus quae dolor voluptas animi quia omnis itaque!
+            Creating outstanding digital experiences for users, businesses, and
+            beyond.
           </p>
           <Button />
         </div>

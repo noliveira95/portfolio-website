@@ -53,6 +53,14 @@ p {
   margin-bottom: 1rem;
 }
 
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: #0048ff;
+}
+
 @media screen and (max-width: 840px) {
   h1 {
     font-size: 2rem;

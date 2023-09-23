@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./About.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 function About() {
   return (
@@ -14,10 +15,15 @@ function About() {
           height={240}
         />
         <p className={styles["about-paragraph"]}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-          deserunt ut sed explicabo perspiciatis minima similique non qui veniam
-          repellendus molestiae esse nobis voluptatibus debitis deleniti ipsam
-          id, perferendis vel!
+          My name is Nicholas Oliveira. I&apos;m a front-end web developer and
+          UI/UX designer located in Las Vegas, NV. Technologies that I commonly
+          use in my work include HTML/CSS, JavaScript, TypeScript, React,
+          Webflow, and WordPress. I also utilize Figma, FigJam, and Adobe for
+          design work such as creating mockups, prototyping, and conducting user
+          research. I have experience in every stage of the{" "}
+          <Link href="https://aws.amazon.com/what-is/sdlc/">
+            software development lifecycle.
+          </Link>
         </p>
       </div>
     </section>
