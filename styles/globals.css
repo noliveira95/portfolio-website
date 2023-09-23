@@ -1,3 +1,8 @@
+:root {
+  /* Colors */
+  --color-primary: #003190;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -32,6 +37,7 @@ h2 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
+  color: var(--color-primary);
 }
 
 h3 {

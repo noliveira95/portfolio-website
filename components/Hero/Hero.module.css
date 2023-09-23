@@ -22,7 +22,7 @@
   font-family: var(--font-work-sans);
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: #003190;
+  color: var(--color-primary);
 }
 
 @media screen and (max-width: 840px) {
