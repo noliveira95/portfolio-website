@@ -10,7 +10,7 @@ function About() {
         <div className="about-grid">
           <Image
             src="/MyPic.png"
-            alt="Picture of the author"
+            alt="Picture of Nicholas"
             width={240}
             height={240}
           />
