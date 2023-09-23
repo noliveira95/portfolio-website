@@ -25,3 +25,9 @@
   margin-bottom: 1rem;
   color: #003190;
 }
+
+@media screen and (max-width: 840px) {
+  .intro-name {
+    font-size: 2rem;
+  }
+}
