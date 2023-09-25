@@ -5,7 +5,7 @@ import SkillCard from "./SkillCard";
 function Skills() {
   return (
     <div id={styles.skills}>
-      <h2>My Skills</h2>
+      <h2 className={styles["skills-title"]}>My Skills</h2>
       <div className={styles["skills-container"]}>
         <SkillCard />
         <SkillCard />
