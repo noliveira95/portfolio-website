@@ -2,22 +2,19 @@ import Image from "next/image";
 import React from "react";
 import styles from "./Skills.module.css";
 
-function SkillCard() {
+function SkillCard({ imageSrc, skillName, skillText }) {
   return (
     <div className={styles["skill-card"]}>
       <Image
-        src="/Olive256x256.png"
+        src={imageSrc}
         alt="skill"
         width={60}
         height={60}
         className={styles["skill-image"]}
       />
       <div className={styles["skill-text"]}>
-        <h3>Skill Name</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          quos.
-        </p>
+        <h3>{skillName}</h3>
+        <p>{skillText}</p>
       </div>
     </div>
   );
