@@ -1,5 +1,6 @@
 :root {
   /* Colors */
+  --color-base-pewter: #e9eaec;
   --color-primary: #003190;
 }
 
@@ -15,7 +16,7 @@
 }
 
 body {
-  background-color: #e9eaec;
+  background-color: var(--color-base-pewter);
   overflow: hidden;
   overflow-y: scroll;
 }

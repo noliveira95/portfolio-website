@@ -1,6 +1,6 @@
 .btn {
   background: black;
-  color: white;
+  color: var(--color-base-pewter);
   padding: 0.5rem 1rem;
   cursor: pointer;
   display: flex;
