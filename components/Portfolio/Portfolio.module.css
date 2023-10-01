@@ -1,7 +1,22 @@
 #portfolio {
-  padding: 50px 0;
+  padding: 60px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.project-slider {
+  display: flex;
+  gap: 4vmin;
+  list-style: none;
+  flex: 0 0 600px;
+  overflow-x: scroll;
+}
+
+.project-image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: center;
 }
