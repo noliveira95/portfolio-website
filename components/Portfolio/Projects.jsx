@@ -15,7 +15,13 @@ function Projects({
 }) {
   return (
     <div className="project-carousel">
-      <img key={currentIndex} src={images[currentIndex]} alt="Project" />
+      <Image
+        key={currentIndex}
+        src={images[currentIndex]}
+        alt="Project"
+        width={300}
+        height={200}
+      ></Image>
       <div className="slide-direction">
         <div className="left" onClick={handlePrevious}>
           <ChevronLeftIcon />
