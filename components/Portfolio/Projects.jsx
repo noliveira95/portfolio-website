@@ -6,33 +6,16 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 
-function Projects({ images }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => {
-      prevIndex + 1 === images.length ? 0 : prevIndex + 1;
-    });
-  };
-
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) => {
-      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1;
-    });
-  };
-
-  const handleDotClick = (index) => {
-    setCurrentIndex(index);
-  };
+function Projects({
+  images,
+  currentIndex,
+  handleNext,
+  handlePrevious,
+  handleDotClick,
+}) {
   return (
     <div className="project-carousel">
-      <Image
-        key={currentIndex}
-        src={images[currentIndex]}
-        alt="Project"
-        width={300}
-        height={300}
-      ></Image>
+      <img key={currentIndex} src={images[currentIndex]} alt="Project" />
       <div className="slide-direction">
         <div className="left" onClick={handlePrevious}>
           <ChevronLeftIcon />
