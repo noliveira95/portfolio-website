@@ -6,17 +6,32 @@
   justify-content: center;
 }
 
-.project-slider {
-  display: flex;
-  gap: 4vmin;
-  list-style: none;
-  flex: 0 0 600px;
-  overflow-x: scroll;
+.project-image {
+  position: relative;
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
 }
 
-.project-image {
-  width: 40vmin;
-  height: 56vmin;
-  object-fit: cover;
-  object-position: center;
+.slide-direction {
+  display: flex;
+  justify-content: space-between;
+}
+
+.indicator {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dot {
+  background-color: #333;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.active {
+  background-color: var(--color-primary);
 }

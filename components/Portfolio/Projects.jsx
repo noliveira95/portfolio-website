@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Portfolio.module.css";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
@@ -14,27 +14,30 @@ function Projects({
   handleDotClick,
 }) {
   return (
-    <div className="project-carousel">
+    <div className={styles["project-carousel"]}>
       <Image
+        className={styles["project-image"]}
         key={currentIndex}
         src={images[currentIndex]}
         alt="Project"
-        width={300}
-        height={200}
+        width={600}
+        height={400}
       ></Image>
-      <div className="slide-direction">
-        <div className="left" onClick={handlePrevious}>
+      <div className={styles["slide-direction"]}>
+        <div className={styles.left} onClick={handlePrevious}>
           <ChevronLeftIcon />
         </div>
-        <div className="right" onClick={handleNext}>
+        <div className={styles.right} onClick={handleNext}>
           <ChevronRightIcon />
         </div>
       </div>
-      <div className="indicator">
+      <div className={styles.indicator}>
         {images.map((_, index) => (
           <div
             key={index}
-            className={`dot ${index === currentIndex ? "active" : ""}`}
+            className={`${styles.dot} ${
+              index === currentIndex ? styles.active : ""
+            }`}
             onClick={() => handleDotClick(index)}
           ></div>
         ))}
