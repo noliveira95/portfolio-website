@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "./Portfolio.module.css";
-import Projects from "./Projects";
+import Projects from "./Projects/Projects";
 
 const images = [
   "/osman-talha-dikyar-NMCABEhN0RE-unsplash.jpg",

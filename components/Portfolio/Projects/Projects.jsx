@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import styles from "./Portfolio.module.css";
+import styles from "../Portfolio.module.css";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
