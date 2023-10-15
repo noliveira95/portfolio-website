@@ -8,7 +8,6 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import validate from "../Projects/validate";
 
 function Projects({
-  images,
   currentIndex,
   handleNext,
   handlePrevious,
@@ -36,7 +35,7 @@ function Projects({
         <Image
           className={styles["project-image"]}
           key={currentIndex}
-          src={images[currentIndex]}
+          src={data.projects[currentIndex].featured_image}
           alt="Project"
           width={600}
           height={400}
@@ -54,7 +53,7 @@ function Projects({
       </div>
 
       <div className={styles.indicator}>
-        {images.map((_, index) => (
+        {data.projects.map((_, index) => (
           <div
             key={index}
             className={`${styles.dot} ${

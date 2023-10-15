@@ -25,6 +25,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "featured_image": {
+            "type": "string"
           }
         },
         "required": [
