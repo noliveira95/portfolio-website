@@ -29,25 +29,27 @@ function Projects({
   }, [data]);
   return (
     <div className={styles["project-carousel"]}>
-      <Image
-        className={styles["project-image"]}
-        key={currentIndex}
-        src={images[currentIndex]}
-        alt="Project"
-        width={600}
-        height={400}
-      ></Image>
+      <div className={styles["project-image-with-btns"]}>
+        <div className={styles.left} onClick={handlePrevious}>
+          <ChevronLeftIcon width={50} height={80} />
+        </div>
+        <Image
+          className={styles["project-image"]}
+          key={currentIndex}
+          src={images[currentIndex]}
+          alt="Project"
+          width={600}
+          height={400}
+        ></Image>
+        <div className={styles.right} onClick={handleNext}>
+          <ChevronRightIcon width={50} height={80} />
+        </div>
+      </div>
+
       <div className={styles["project-title"]}>
         <h2>{data.projects[currentIndex].title}</h2>
       </div>
-      <div className={styles["slide-direction"]}>
-        <div className={styles.left} onClick={handlePrevious}>
-          <ChevronLeftIcon />
-        </div>
-        <div className={styles.right} onClick={handleNext}>
-          <ChevronRightIcon />
-        </div>
-      </div>
+
       <div className={styles.indicator}>
         {images.map((_, index) => (
           <div

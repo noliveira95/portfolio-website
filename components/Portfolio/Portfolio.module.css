@@ -6,6 +6,12 @@
   justify-content: center;
 }
 
+.project-image-with-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .project-image {
   position: relative;
   border-radius: 10px;
@@ -13,14 +19,17 @@
   overflow: hidden;
 }
 
+.left {
+  margin-right: 28px;
+}
+
+.right {
+  margin-left: 28px;
+}
+
 .project-title {
   text-align: center;
   margin-top: 20px;
-}
-
-.slide-direction {
-  display: flex;
-  justify-content: space-between;
 }
 
 .indicator {
