@@ -1,10 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../Portfolio.module.css";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
+import validate from "../Projects/validate";
 
 function Projects({
   images,
@@ -12,7 +13,20 @@ function Projects({
   handleNext,
   handlePrevious,
   handleDotClick,
+  data,
 }) {
+  async function validateData() {
+    try {
+      const data = await validate(data);
+      console.log(data);
+    } catch (err) {
+      console.log("Error: Invalid data " + `${err}`);
+    }
+  }
+
+  useEffect(() => {
+    validateData();
+  }, [data]);
   return (
     <div className={styles["project-carousel"]}>
       <Image
@@ -23,6 +37,9 @@ function Projects({
         width={600}
         height={400}
       ></Image>
+      <div className={styles["project-title"]}>
+        <h2>{data.projects[currentIndex].title}</h2>
+      </div>
       <div className={styles["slide-direction"]}>
         <div className={styles.left} onClick={handlePrevious}>
           <ChevronLeftIcon />
