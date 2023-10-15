@@ -35,7 +35,8 @@
           "description",
           "client",
           "date_completed",
-          "skills_applied"
+          "skills_applied",
+          "featured_image"
         ]
       }
     }
