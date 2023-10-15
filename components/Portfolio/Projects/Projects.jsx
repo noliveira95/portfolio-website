@@ -49,6 +49,9 @@ function Projects({
       <div className={styles["project-title"]}>
         <h2>{data.projects[currentIndex].title}</h2>
       </div>
+      <div className={styles["project-description"]}>
+        <p>{data.projects[currentIndex].description}</p>
+      </div>
 
       <div className={styles.indicator}>
         {images.map((_, index) => (
