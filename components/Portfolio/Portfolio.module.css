@@ -13,6 +13,11 @@
   overflow: hidden;
 }
 
+.project-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
 .slide-direction {
   display: flex;
   justify-content: space-between;
