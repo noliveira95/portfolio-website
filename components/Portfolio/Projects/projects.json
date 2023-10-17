@@ -1,20 +1,20 @@
-{
-  "projects": [
-    {
-      "title": "My First Project",
-      "description": "A simple website for a small business.",
-      "client": "Acme Corporation",
-      "date_completed": "2023-10-01",
-      "skills_applied": ["HTML", "CSS", "JavaScript"],
-      "featured_image": "/osman-talha-dikyar-NMCABEhN0RE-unsplash.jpg"
-    },
-    {
-      "title": "My Second Project",
-      "description": "A more complex website for a larger business, with features such as e-commerce and a blog.",
-      "client": "XYZ Company",
-      "date_completed": "2023-11-01",
-      "skills_applied": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-      "featured_image": "/osman-talha-dikyar-NMCABEhN0RE-unsplash.jpg"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "title": "My First Project",
+    "description": "A simple website for a small business.",
+    "client": "Acme Corporation",
+    "date_completed": "2023-10-01",
+    "skills_applied": ["HTML", "CSS", "JavaScript"],
+    "featured_image": "/osman-talha-dikyar-NMCABEhN0RE-unsplash.jpg"
+  },
+  {
+    "id": 2,
+    "title": "My Second Project",
+    "description": "A more complex website for a larger business, with features such as e-commerce and a blog.",
+    "client": "XYZ Company",
+    "date_completed": "2023-11-01",
+    "skills_applied": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    "featured_image": "/ulysse-pointcheval--j6LLsAehUo-unsplash.jpg"
+  }
+]

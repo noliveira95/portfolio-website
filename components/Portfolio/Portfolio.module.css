@@ -6,10 +6,22 @@
   justify-content: center;
 }
 
-.project-image-with-btns {
+.project-with-btns {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.project-container {
+  width: 800px;
+}
+
+.project-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
 }
 
 .project-image {
