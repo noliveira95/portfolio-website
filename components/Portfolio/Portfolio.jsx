@@ -1,12 +1,27 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Portfolio.module.css";
 import Projects from "./Projects/Projects";
 import data from "./Projects/projects.json";
+import validate from "./Projects/validate";
 
 function Portfolio() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [validatedData, setValidatedData] = useState(null);
+
+  async function validateData() {
+    try {
+      const valid = await validate(data);
+      setValidatedData(valid);
+    } catch {
+      console.log("error");
+    }
+  }
+
+  useEffect(() => {
+    validateData();
+  }, [validatedData]);
 
   const handleNext = () => {
     if (currentIndex === data.projects.length - 1) {
