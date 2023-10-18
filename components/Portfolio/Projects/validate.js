@@ -1,18 +1,16 @@
-import Ajv from "ajv";
+import Ajv from "ajv/dist/jtd";
 const ajv = new Ajv({
-  formats: {
-    date: "yyyy-mm-dd",
-  },
+  strict: false,
 });
-import schema from "./projects.schema.json";
 
-export default async function validate(data) {
-  const valid = ajv.validateSchema(schema, data);
+const validateData = (data, schema) => {
+  const validate = ajv.compile(schema);
+  const valid = validate(data);
   if (!valid) {
-    console.log(ajv.errorsText());
-    console.log("Failure");
-    return;
+    console.error(validate.errors);
+    return false;
   }
-  console.log("Success");
-  return valid;
-}
+  return true;
+};
+
+export default validateData;
