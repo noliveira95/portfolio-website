@@ -58,31 +58,13 @@ function Portfolio() {
             <div className={styles["project-container"]}>
               <Projects
                 currentIndex={currentIndex}
-                title={isValid ? data[currentIndex].title : "Title"}
-                description={
-                  isValid ? data[currentIndex].description : "Description"
-                }
-                image={
-                  isValid
-                    ? data[currentIndex].featured_image
-                    : "/ulysse-pointcheval--j6LLsAehUo-unsplash.jpg"
-                }
+                data={isValid ? data : []}
+                handleDotClick={handleDotClick}
               />
             </div>
             <div className={styles.right} onClick={handleNext}>
               <ChevronRightIcon width={50} height={80} />
             </div>
-          </div>
-          <div className={styles.indicator}>
-            {data.map((_, index) => (
-              <div
-                key={index}
-                className={`${styles.dot} ${
-                  index === currentIndex ? styles.active : ""
-                }`}
-                onClick={() => handleDotClick(index)}
-              ></div>
-            ))}
           </div>
         </div>
       </section>

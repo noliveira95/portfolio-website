@@ -51,7 +51,7 @@
 }
 
 .indicator {
-  margin-top: 20px;
+  margin: 20px 0px;
   display: flex;
   justify-content: center;
   gap: 20px;
