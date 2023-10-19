@@ -1,13 +1,21 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Portfolio.module.css";
 import Projects from "./Projects/Projects";
 import data from "./Projects/projects.json";
+import schema from "./Projects/projects.schema.json";
+import validateData from "./Projects/validate";
 import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 
 function Portfolio() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isValid, setIsValid] = useState(false);
+
+  useEffect(() => {
+    const valid = validateData(data, schema);
+    setIsValid(valid);
+  }, []);
 
   const handleNext = () => {
     if (currentIndex === data.length - 1) {
@@ -31,6 +39,12 @@ function Portfolio() {
     setCurrentIndex(index);
   };
 
+  if (!isValid) {
+    console.log("Data is not valid");
+  } else {
+    console.log("Data is valid");
+  }
+
   return (
     <>
       <section id={styles.portfolio}>
@@ -44,9 +58,15 @@ function Portfolio() {
             <div className={styles["project-container"]}>
               <Projects
                 currentIndex={currentIndex}
-                title={data[currentIndex].title}
-                description={data[currentIndex].description}
-                image={data[currentIndex].featured_image}
+                title={isValid ? data[currentIndex].title : "Title"}
+                description={
+                  isValid ? data[currentIndex].description : "Description"
+                }
+                image={
+                  isValid
+                    ? data[currentIndex].featured_image
+                    : "/ulysse-pointcheval--j6LLsAehUo-unsplash.jpg"
+                }
               />
             </div>
             <div className={styles.right} onClick={handleNext}>

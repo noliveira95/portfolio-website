@@ -1,34 +1,13 @@
 {
-  "type": "array",
   "elements": {
-    "type": "object",
     "properties": {
-      "id": {
-        "type": "integer"
-      },
-      "title": {
-        "type": "string"
-      },
-      "description": {
-        "type": "string"
-      },
-      "client": {
-        "type": "string"
-      },
-      "date_completed": {
-        "type": "string"
-      },
-      "skills_applied": {
-        "type": "string"
-      },
-      "featured_image": {
-        "type": "string"
-      }
-    },
-    "optionalProperties": {
-      "client_url": {
-        "type": "string"
-      }
+      "client": { "type": "string" },
+      "date_completed": { "type": "string" },
+      "description": { "type": "string" },
+      "featured_image": { "type": "string" },
+      "id": { "type": "uint8" },
+      "skills_applied": { "elements": { "type": "string" } },
+      "title": { "type": "string" }
     }
   }
 }
