@@ -18,7 +18,7 @@ function Projects({ currentIndex, data, handleDotClick }) {
               : "/osman-talha-dikyar-NMCABEhN0RE-unsplash.jpg"
           }
           alt="Project"
-          width={600}
+          width={700}
           height={400}
         ></Image>
         <div className={styles.indicator}>
