@@ -8,13 +8,13 @@ function CustomCard({ cardImage, cardTitle, cardText }) {
       <Image
         src={cardImage}
         alt="skill"
-        width={60}
-        height={60}
+        width={200}
+        height={200}
         className={styles["card-image"]}
       />
-      <div className={styles["card-text"]}>
-        <h3>{cardTitle}</h3>
-        <p>{cardText}</p>
+      <div className={styles["card-content"]}>
+        <h3 className={styles["card-title"]}>{cardTitle}</h3>
+        <p className={styles["card-description"]}>{cardText}</p>
       </div>
     </div>
   );
