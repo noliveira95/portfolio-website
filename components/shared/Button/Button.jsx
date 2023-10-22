@@ -3,13 +3,13 @@ import styles from "./Button.module.css";
 import { DownloadIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
-function Button() {
+function Button({ btnText, btnLink, btnIcon }) {
   return (
     <>
-      <Link type="button" href="/">
+      <Link type="button" href={btnLink}>
         <button className={styles["btn"]}>
-          <DownloadIcon className={styles["btn-icon"]} color="white" />
-          Download CV
+          {btnIcon}
+          {btnText}
         </button>
       </Link>
     </>

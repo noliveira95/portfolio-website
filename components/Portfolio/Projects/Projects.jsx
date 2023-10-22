@@ -50,6 +50,8 @@ function Projects({ currentIndex, data, handleDotClick }) {
           cardText={
             data.length > 0 ? data[currentIndex].description : "Description"
           }
+          cardCTA={data.length > 0 ? data[currentIndex].client_url : "#"}
+          cardCTAText={"Visit Site"}
         />
         <div className={styles.indicator}>
           {data.map((_, index) => (

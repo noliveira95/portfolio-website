@@ -19,3 +19,8 @@
   text-align: center;
   max-width: 400px;
 }
+
+.card-cta {
+  display: flex;
+  justify-content: center;
+}

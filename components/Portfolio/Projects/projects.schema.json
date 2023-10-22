@@ -3,6 +3,7 @@
     "properties": {
       "client": { "type": "string" },
       "client_logo": { "type": "string" },
+      "client_url": { "type": "string" },
       "date_completed": { "type": "string" },
       "description": { "type": "string" },
       "featured_image": { "type": "string" },

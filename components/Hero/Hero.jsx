@@ -16,7 +16,7 @@ function Hero() {
             Creating outstanding digital experiences for users, businesses, and
             beyond.
           </p>
-          <Button />
+          <Button btnLink={"/"} btnText={"Download"} />
         </div>
       </section>
     </>

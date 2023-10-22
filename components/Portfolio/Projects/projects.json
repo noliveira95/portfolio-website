@@ -5,6 +5,7 @@
     "description": "A simple website for a small business.",
     "client": "Climate Reality",
     "client_logo": "/images/logos/ClimateRealityLogo.png",
+    "client_url": "https://climaterealitylasvegas.com",
     "date_completed": "2023-10-01",
     "skills_applied": ["HTML", "CSS", "JavaScript"],
     "featured_image": "/images/projects/CRLVHome.png"
@@ -15,6 +16,7 @@
     "description": "A more complex website for a larger business, with features such as e-commerce and a blog.",
     "client": "Intagly",
     "client_logo": "/images/logos/IntaglyLogo.png",
+    "client_url": "https://intagly.com",
     "date_completed": "2023-11-01",
     "skills_applied": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     "featured_image": "/images/projects/IntaglyHome.png"
