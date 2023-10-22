@@ -2,6 +2,7 @@
   "elements": {
     "properties": {
       "client": { "type": "string" },
+      "client_logo": { "type": "string" },
       "date_completed": { "type": "string" },
       "description": { "type": "string" },
       "featured_image": { "type": "string" },

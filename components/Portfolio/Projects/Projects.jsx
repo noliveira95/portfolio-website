@@ -9,7 +9,7 @@ function Projects({ currentIndex, data, handleDotClick }) {
   return (
     <>
       <div className={styles["project-items"]}>
-        <Image
+        {/* <Image
           className={styles["project-image"]}
           key={currentIndex}
           src={
@@ -20,7 +20,25 @@ function Projects({ currentIndex, data, handleDotClick }) {
           alt="Project"
           width={700}
           height={400}
-        ></Image>
+        ></Image> */}
+        <div className={styles["client-logo-wrapper"]}>
+          <Image
+            className={styles["client-logo"]}
+            src={
+              data.length > 0
+                ? data[currentIndex].client_logo
+                : "/osman-talha-dikyar-NMCABEhN0RE-unsplash.jpg"
+            }
+            alt="Client Logo"
+            width={200}
+            height={200}
+          ></Image>
+        </div>
+        <div className={styles["project-description"]}>
+          <p>
+            {data.length > 0 ? data[currentIndex].description : "Description"}
+          </p>
+        </div>
         <div className={styles.indicator}>
           {data.map((_, index) => (
             <div
@@ -33,14 +51,9 @@ function Projects({ currentIndex, data, handleDotClick }) {
           ))}
         </div>
 
-        <div className={styles["project-title"]}>
+        {/* <div className={styles["project-title"]}>
           <h2>{data.length > 0 ? data[currentIndex].title : "Title"}</h2>
-        </div>
-        <div className={styles["project-description"]}>
-          <p>
-            {data.length > 0 ? data[currentIndex].description : "Description"}
-          </p>
-        </div>
+        </div> */}
       </div>
     </>
   );
