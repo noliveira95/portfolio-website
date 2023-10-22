@@ -1,18 +1,18 @@
 import Image from "next/image";
 import React from "react";
-import styles from "./Skills.module.css";
+import styles from "./Card.module.css";
 
-function CustomCard({ imageSrc, cardTitle, cardText }) {
+function CustomCard({ cardImage, cardTitle, cardText }) {
   return (
-    <div className={styles["skill-card"]}>
+    <div className={styles["card"]}>
       <Image
-        src={imageSrc}
+        src={cardImage}
         alt="skill"
         width={60}
         height={60}
-        className={styles["skill-image"]}
+        className={styles["card-image"]}
       />
-      <div className={styles["skill-text"]}>
+      <div className={styles["card-text"]}>
         <h3>{cardTitle}</h3>
         <p>{cardText}</p>
       </div>
