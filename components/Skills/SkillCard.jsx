@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "./Skills.module.css";
 
-function CustomCard({ imageSrc, skillName, skillText }) {
+function CustomCard({ imageSrc, cardTitle, cardText }) {
   return (
     <div className={styles["skill-card"]}>
       <Image
@@ -13,8 +13,8 @@ function CustomCard({ imageSrc, skillName, skillText }) {
         className={styles["skill-image"]}
       />
       <div className={styles["skill-text"]}>
-        <h3>{skillName}</h3>
-        <p>{skillText}</p>
+        <h3>{cardTitle}</h3>
+        <p>{cardText}</p>
       </div>
     </div>
   );

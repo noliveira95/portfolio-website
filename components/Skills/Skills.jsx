@@ -9,18 +9,18 @@ function Skills() {
       <div className={styles["skills-container"]}>
         <CustomCard
           imageSrc={"/Olive256x256.png"}
-          skillName={"Skill 1"}
-          skillText={"Skill Text 1"}
+          cardTitle={"Skill 1"}
+          cardText={"Skill Text 1"}
         />
         <CustomCard
           imageSrc={"/Olive256x256.png"}
-          skillName={"Skill 2"}
-          skillText={"Skill Text 2"}
+          cardTitle={"Skill 2"}
+          cardText={"Skill Text 2"}
         />
         <CustomCard
           imageSrc={"/Olive256x256.png"}
-          skillName={"Skill 3"}
-          skillText={"Skill Text 3"}
+          cardTitle={"Skill 3"}
+          cardText={"Skill Text 3"}
         />
       </div>
     </div>
