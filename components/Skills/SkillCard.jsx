@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "./Skills.module.css";
 
-function SkillCard({ imageSrc, skillName, skillText }) {
+function CustomCard({ imageSrc, skillName, skillText }) {
   return (
     <div className={styles["skill-card"]}>
       <Image
@@ -20,4 +20,4 @@ function SkillCard({ imageSrc, skillName, skillText }) {
   );
 }
 
-export default SkillCard;
+export default CustomCard;
