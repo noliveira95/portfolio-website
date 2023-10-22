@@ -10,7 +10,7 @@ function CustomCard({ cardImage, cardTitle, cardText, cardCTA, cardCTAText }) {
         src={cardImage}
         alt="skill"
         width={200}
-        height={200}
+        height={140}
         className={styles["card-image"]}
       />
       <div className={styles["card-content"]}>
