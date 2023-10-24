@@ -1,27 +1,17 @@
 import React from "react";
 import styles from "./Skills.module.css";
-import CustomCard from "../shared/Card/Card";
 
 function Skills() {
   return (
     <div id={styles.skills}>
       <h2 className={styles["skills-title"]}>My Skills</h2>
       <div className={styles["skills-container"]}>
-        {/* <CustomCard
-          cardImage={"/Olive256x256.png"}
-          cardTitle={"Skill 1"}
-          cardText={"Skill Text 1"}
-        />
-        <CustomCard
-          cardImage={"/Olive256x256.png"}
-          cardTitle={"Skill 2"}
-          cardText={"Skill Text 2"}
-        />
-        <CustomCard
-          cardImage={"/Olive256x256.png"}
-          cardTitle={"Skill 3"}
-          cardText={"Skill Text 3"}
-        /> */}
+        <div className={styles["left-section"]}>
+          <h3>Front-end Development</h3>
+        </div>
+        <div className={styles["right-section"]}>
+          <h3>UX/UI Design</h3>
+        </div>
       </div>
     </div>
   );
