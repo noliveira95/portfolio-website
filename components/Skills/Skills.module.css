@@ -40,3 +40,7 @@
   width: 600px;
   height: 500px;
 }
+
+.skills-subheading {
+  color: var(--color-primary);
+}

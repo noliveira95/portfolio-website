@@ -20,7 +20,9 @@ function Skills() {
             portfolio includes websites, web apps, and mobile applications.
           </p>
           <div className={styles["tools-list-wrapper"]}>
-            <h4>Languages and Frameworks:</h4>
+            <h4 className={styles["skills-subheading"]}>
+              Languages and Frameworks:
+            </h4>
             <p>
               HTML/CSS, JavaScript, TypeScript, Dart, React, Next.js, Flutter
             </p>
@@ -40,7 +42,7 @@ function Skills() {
             personas and user journey maps.
           </p>
           <div className={styles["tools-list-wrapper"]}>
-            <h4>Things I design:</h4>
+            <h4 className={styles["skills-subheading"]}>Things I design:</h4>
             <p>
               Websites, Web Apps, Mobile Apps, Design Systems, Information
               Architecture, Logos
