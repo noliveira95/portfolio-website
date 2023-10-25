@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Skills.module.css";
+import Image from "next/image";
 
 function Skills() {
   return (
@@ -7,22 +8,31 @@ function Skills() {
       <h2 className={styles["skills-title"]}>My Skills</h2>
       <div className={styles["skills-container"]}>
         <div className={styles["skill-section"]}>
+          <Image
+            src="/images/icons/code_development_icon.png"
+            alt="Developer icon"
+            width={100}
+            height={100}
+          />
           <h3>Front-end Development</h3>
           <p>
             I have 2+ years of experience in front-end web development. My
             portfolio includes websites, web apps, and mobile applications.
           </p>
           <div className={styles["tools-list-wrapper"]}>
-            <h4>Tools:</h4>
-            <ul>
-              <li>Figma</li>
-              <li>Figjam</li>
-              <li>Adobe Illustrator</li>
-              <li>Adobe Photoshop</li>
-            </ul>
+            <h4>Languages and Frameworks:</h4>
+            <p>
+              HTML/CSS, JavaScript, TypeScript, Dart, React, Next.js, Flutter
+            </p>
           </div>
         </div>
         <div className={styles["skill-section"]}>
+          <Image
+            src="/images/icons/eye_icon.png"
+            alt="Developer icon"
+            width={100}
+            height={100}
+          />
           <h3>UX/UI Design</h3>
           <p>
             My experience includes creating wireframes, mockups and prototypes,
@@ -30,13 +40,11 @@ function Skills() {
             personas and user journey maps.
           </p>
           <div className={styles["tools-list-wrapper"]}>
-            <h4>Tools:</h4>
-            <ul>
-              <li>Figma</li>
-              <li>Figjam</li>
-              <li>Adobe Illustrator</li>
-              <li>Adobe Photoshop</li>
-            </ul>
+            <h4>Things I design:</h4>
+            <p>
+              Websites, Web Apps, Mobile Apps, Design Systems, Information
+              Architecture, Logos
+            </p>
           </div>
         </div>
       </div>
