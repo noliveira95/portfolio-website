@@ -1,9 +1,14 @@
 #portfolio {
+  background-color: var(--color-primary);
   padding: 60px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.portfolio-heading {
+  color: var(--color-base-pewter);
 }
 
 .project-with-btns {
@@ -70,12 +75,12 @@
 }
 
 .dot {
-  background-color: #333;
+  background-color: black;
   width: 15px;
   height: 15px;
   border-radius: 50%;
 }
 
 .active {
-  background-color: var(--color-primary);
+  background-color: var(--color-base-pewter);
 }

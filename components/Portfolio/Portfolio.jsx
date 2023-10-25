@@ -48,12 +48,12 @@ function Portfolio() {
   return (
     <>
       <section id={styles.portfolio}>
-        <h2>Portfolio</h2>
+        <h2 className={styles["portfolio-heading"]}>Portfolio</h2>
 
         <div className={styles["project-carousel"]}>
           <div className={styles["project-with-btns"]}>
             <div className={styles.left} onClick={handlePrevious}>
-              <ChevronLeftIcon width={50} height={80} />
+              <ChevronLeftIcon width={50} height={80} color="#e9eaec" />
             </div>
             <div className={styles["project-container"]}>
               <Projects
@@ -63,7 +63,7 @@ function Portfolio() {
               />
             </div>
             <div className={styles.right} onClick={handleNext}>
-              <ChevronRightIcon width={50} height={80} />
+              <ChevronRightIcon width={50} height={80} color="#e9eaec" />
             </div>
           </div>
         </div>
