@@ -1,5 +1,7 @@
 :root {
   /* Colors */
+  --color-base-white: #ffffff;
+  --color-base-black: #000000;
   --color-base-pewter: #e9eaec;
   --color-primary: #003190;
 }
