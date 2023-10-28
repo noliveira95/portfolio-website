@@ -35,6 +35,8 @@ function ContactForm() {
       />
       <textarea
         className={styles["contact-form-field"]}
+        type="text"
+        placeholder="Additional Information"
         {...register("Additional Information", {
           required: false,
           maxLength: 250,
