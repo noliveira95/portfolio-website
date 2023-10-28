@@ -1,5 +1,5 @@
 .btn {
-  background: black;
+  background: var(--color-primary);
   color: var(--color-base-pewter);
   padding: 0.5rem 1rem;
   cursor: pointer;
@@ -7,10 +7,14 @@
   align-items: center;
   justify-content: center;
   border: none;
-  border-radius: 20px;
+  border-radius: 4px;
   font-family: var(--font-dm-sans);
 }
 
 .btn-icon {
   margin-right: 8px;
+}
+
+.btn:hover {
+  background: var(--color-base-black);
 }
