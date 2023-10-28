@@ -41,8 +41,8 @@
 }
 
 .submit:hover {
-  background-color: var(--color-base-pewter);
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+  background-color: var(--color-base-black);
+  color: var(--color-base-pewter);
+  border: 1px solid var(--color-base-black);
   cursor: pointer;
 }
