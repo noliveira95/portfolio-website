@@ -8,32 +8,20 @@ import styles from "./Contact.module.css";
 function ContactForm() {
   const form = useRef();
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  // };
-
   const { register, handleSubmit, reset } = useForm({
     defaultValues: {
-      user_first_name: "",
-      user_last_name: "",
+      user_name: "",
       user_email: "",
       message: "",
     },
   });
 
-  const onSubmit = (data) => {
-    const templateParams = {
-      user_name: data.user_first_name + " " + data.user_last_name,
-      user_email: data.user_email,
-      message: data.message,
-    };
-
+  const onSubmit = () => {
     emailjs
       .sendForm(
         "contact_service",
         "contact_form",
-        templateParams,
+        form.current,
         "Igz98Ny1j25t2gvsI"
       )
       .then(
@@ -58,16 +46,9 @@ function ContactForm() {
       <input
         className={styles["contact-form-field"]}
         type="text"
-        placeholder="First name"
-        name="user_first_name"
-        {...register("user_first_name", { required: true, maxLength: 80 })}
-      />
-      <input
-        className={styles["contact-form-field"]}
-        type="text"
-        placeholder="Last name"
-        name="user_last_name"
-        {...register("user_last_name", { required: true, maxLength: 100 })}
+        placeholder="Name"
+        name="user_name"
+        {...register("user_name", { required: true, maxLength: 120 })}
       />
       <input
         className={styles["contact-form-field"]}
