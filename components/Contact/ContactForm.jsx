@@ -4,9 +4,11 @@ import React, { useRef } from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function ContactForm() {
   const form = useRef();
+  const recaptchaRef = useRef(null);
 
   const { register, handleSubmit, reset } = useForm({
     defaultValues: {
@@ -66,6 +68,11 @@ function ContactForm() {
           required: false,
           maxLength: 250,
         })}
+      />
+
+      <ReCAPTCHA
+        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_KEY}
+        ref={recaptchaRef}
       />
 
       <input className={styles.submit} type="submit" value="Send" />
