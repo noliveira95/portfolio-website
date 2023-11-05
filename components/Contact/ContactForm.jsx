@@ -35,8 +35,10 @@ function ContactForm() {
         (error) => {
           console.log("FAILED...");
           console.log(error.text);
+          alert("Please verify that you are a human.");
         }
       );
+    recaptchaRef.current.reset();
   };
 
   return (
