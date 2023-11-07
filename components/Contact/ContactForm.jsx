@@ -1,16 +1,22 @@
 "use client";
 
-import React, { useRef } from "react";
-import { useForm } from "react-hook-form";
+import React, { useRef, useState } from "react";
+import { set, useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
 import ReCAPTCHA from "react-google-recaptcha";
 
 function ContactForm() {
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const form = useRef();
   const recaptchaRef = useRef(null);
 
-  const { register, handleSubmit, reset } = useForm({
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { isSubmitSuccessful },
+  } = useForm({
     defaultValues: {
       user_name: "",
       user_email: "",
@@ -30,15 +36,18 @@ function ContactForm() {
         (result) => {
           console.log("SUCCESS!");
           console.log(result.text);
-          reset();
+          setIsFormSubmitted(isSubmitSuccessful);
+          // reset();
+          // recaptchaRef.current.reset();
         },
         (error) => {
           console.log("FAILED...");
           console.log(error.text);
+          setIsFormSubmitted(isSubmitSuccessful);
           alert("Please verify that you are a human.");
         }
       );
-    recaptchaRef.current.reset();
+    console.log("isSubmitSuccessful", isSubmitSuccessful);
   };
 
   return (
@@ -76,8 +85,12 @@ function ContactForm() {
         sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_KEY}
         ref={recaptchaRef}
       />
-
       <input className={styles.submit} type="submit" value="Send" />
+      {isFormSubmitted && (
+        <p className={styles["contact-form-success"]}>
+          Thank you for your message!
+        </p>
+      )}
     </form>
   );
 }
