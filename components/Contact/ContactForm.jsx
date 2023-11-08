@@ -5,9 +5,12 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
 import ReCAPTCHA from "react-google-recaptcha";
+import DialogPopup from "../shared/Dialog/Dialog";
 
 function ContactForm() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [dialogIsOpen, setDialogIsOpen] = useState(false);
+
   const form = useRef();
   const recaptchaRef = useRef(null);
 
@@ -24,6 +27,14 @@ function ContactForm() {
     },
   });
 
+  const openDialog = () => {
+    setDialogIsOpen(true);
+  };
+
+  const closeDialog = () => {
+    setDialogIsOpen(false);
+  };
+
   const onSubmit = () => {
     emailjs
       .sendForm(
@@ -36,18 +47,22 @@ function ContactForm() {
         (result) => {
           console.log("SUCCESS!");
           console.log(result.text);
-          setIsFormSubmitted(isSubmitSuccessful);
+          console.log("isSubmitSuccessful", isSubmitSuccessful);
+          // setIsFormSubmitted(isSubmitSuccessful);
           // reset();
           // recaptchaRef.current.reset();
         },
         (error) => {
           console.log("FAILED...");
           console.log(error.text);
-          setIsFormSubmitted(isSubmitSuccessful);
+          console.log("isSubmitSuccessful", isSubmitSuccessful);
+          // setIsFormSubmitted(isSubmitSuccessful);
           alert("Please verify that you are a human.");
         }
       );
-    console.log("isSubmitSuccessful", isSubmitSuccessful);
+    if (isFormSubmitted) {
+      openDialog();
+    }
   };
 
   return (
@@ -87,9 +102,13 @@ function ContactForm() {
       />
       <input className={styles.submit} type="submit" value="Send" />
       {isFormSubmitted && (
-        <p className={styles["contact-form-success"]}>
-          Thank you for your message!
-        </p>
+        <DialogPopup
+          title="Message Sent!"
+          description="Thank you for your inquiry"
+          buttonText="Finish"
+          isOpen={dialogIsOpen}
+          closeDialog={closeDialog}
+        />
       )}
     </form>
   );
