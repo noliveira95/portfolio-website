@@ -36,7 +36,8 @@ function ContactForm() {
     setDialogIsOpen(false);
   };
 
-  const onSubmit = () => {
+  const onSubmit = (data, e) => {
+    e.preventDefault();
     emailjs
       .sendForm(
         "contact_service",
