@@ -8,7 +8,6 @@ import ReCAPTCHA from "react-google-recaptcha";
 import DialogPopup from "../shared/Dialog/Dialog";
 
 function ContactForm() {
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [dialogIsOpen, setDialogIsOpen] = useState(false);
 
   const form = useRef();
@@ -32,6 +31,8 @@ function ContactForm() {
   };
 
   const closeDialog = () => {
+    reset();
+    recaptchaRef.current.reset();
     setDialogIsOpen(false);
   };
 
@@ -45,22 +46,18 @@ function ContactForm() {
       )
       .then(
         (result) => {
+          console.log("isSubmitSuccessful", isSubmitSuccessful);
           console.log("SUCCESS!");
           console.log(result.text);
-          console.log("isSubmitSuccessful", isSubmitSuccessful);
-          // setIsFormSubmitted(isSubmitSuccessful);
-          // reset();
-          // recaptchaRef.current.reset();
         },
         (error) => {
+          console.log("isSubmitSuccessful", isSubmitSuccessful);
           console.log("FAILED...");
           console.log(error.text);
-          console.log("isSubmitSuccessful", isSubmitSuccessful);
-          // setIsFormSubmitted(isSubmitSuccessful);
           alert("Please verify that you are a human.");
         }
       );
-    if (isFormSubmitted) {
+    if (isSubmitSuccessful) {
       openDialog();
     }
   };
@@ -101,15 +98,14 @@ function ContactForm() {
         ref={recaptchaRef}
       />
       <input className={styles.submit} type="submit" value="Send" />
-      {isFormSubmitted && (
-        <DialogPopup
-          title="Message Sent!"
-          description="Thank you for your inquiry"
-          buttonText="Finish"
-          isOpen={dialogIsOpen}
-          closeDialog={closeDialog}
-        />
-      )}
+
+      <DialogPopup
+        title="Message Sent!"
+        description="Thank you for your inquiry"
+        buttonText="Finish"
+        isOpen={dialogIsOpen}
+        closeDialog={closeDialog}
+      />
     </form>
   );
 }
