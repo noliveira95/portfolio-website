@@ -1,4 +1,3 @@
-/* Dialog container */
 .dialog-container {
   position: fixed;
   top: 0;
@@ -11,7 +10,6 @@
   align-items: center;
 }
 
-/* Dialog box */
 .dialog-box {
   background-color: #fff;
   border-radius: 5px;
@@ -23,27 +21,23 @@
   overflow-y: auto;
 }
 
-/* Dialog title */
 .dialog-title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-/* Dialog content */
 .dialog-content {
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
-/* Dialog buttons */
 .dialog-buttons {
   display: flex;
   justify-content: flex-end;
 }
 
-/* Dialog button */
 .dialog-button {
   background-color: #007bff;
   color: #fff;
@@ -54,7 +48,6 @@
   cursor: pointer;
 }
 
-/* Dialog button hover */
 .dialog-button:hover {
   background-color: #0069d9;
 }
