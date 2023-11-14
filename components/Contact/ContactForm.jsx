@@ -17,7 +17,7 @@ function ContactForm() {
     register,
     handleSubmit,
     reset,
-    formState: { isSubmitSuccessful },
+    formState: { errors },
   } = useForm({
     defaultValues: {
       user_name: "",
@@ -47,20 +47,16 @@ function ContactForm() {
       )
       .then(
         (result) => {
-          console.log("isSubmitSuccessful", isSubmitSuccessful);
           console.log("SUCCESS!");
           console.log(result.text);
+          openDialog();
         },
         (error) => {
-          console.log("isSubmitSuccessful", isSubmitSuccessful);
           console.log("FAILED...");
           console.log(error.text);
           alert("Please verify that you are a human.");
         }
       );
-    if (isSubmitSuccessful) {
-      openDialog();
-    }
   };
 
   return (
@@ -69,6 +65,16 @@ function ContactForm() {
       onSubmit={handleSubmit(onSubmit)}
       ref={form}
     >
+      {errors.user_name && (
+        <span className={styles["contact-form-error"]}>
+          Please enter your name.
+        </span>
+      )}
+      {errors.user_email && (
+        <span className={styles["contact-form-error"]}>
+          Please enter your email address.
+        </span>
+      )}
       <input
         className={styles["contact-form-field"]}
         type="text"
