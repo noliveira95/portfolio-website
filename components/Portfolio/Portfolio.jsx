@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import styles from "./Portfolio.module.css";
 import Projects from "./Projects/Projects";
 import data from "./Projects/projects.json";
-import schema from "./Projects/projects.schema.json";
 import validateData from "./Projects/validate";
 import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 
@@ -13,7 +12,7 @@ function Portfolio() {
   const [isValid, setIsValid] = useState(false);
 
   useEffect(() => {
-    const valid = validateData(data, schema);
+    const valid = validateData(data);
     setIsValid(valid);
   }, []);
 
