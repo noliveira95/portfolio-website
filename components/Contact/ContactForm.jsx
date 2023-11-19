@@ -67,12 +67,17 @@ function ContactForm() {
     >
       {errors.user_name && (
         <span className={styles["contact-form-error"]}>
-          Please enter your name.
+          {errors.user_name.message}
         </span>
       )}
       {errors.user_email && (
         <span className={styles["contact-form-error"]}>
-          Please enter your email address.
+          {errors.user_email.message}
+        </span>
+      )}
+      {errors.additional_information && (
+        <span className={styles["contact-form-error"]}>
+          {errors.additional_information.message}
         </span>
       )}
       <input
@@ -80,14 +85,20 @@ function ContactForm() {
         type="text"
         placeholder="Name"
         name="user_name"
-        {...register("user_name", { required: true, maxLength: 120 })}
+        {...register("user_name", {
+          required: "Please enter your name.",
+          maxLength: 120,
+        })}
       />
       <input
         className={styles["contact-form-field"]}
         type="text"
         placeholder="Email"
         name="user_email"
-        {...register("user_email", { required: true, pattern: /^\S+@\S+$/i })}
+        {...register("user_email", {
+          required: "Please enter your email address.",
+          pattern: /^\S+@\S+$/i,
+        })}
       />
       <textarea
         className={styles["contact-form-field"]}
@@ -96,7 +107,10 @@ function ContactForm() {
         name="additional_information"
         {...register("additional_information", {
           required: false,
-          maxLength: 250,
+          maxLength: {
+            value: 250,
+            message: "Please enter a message with fewer than 250 characters.",
+          },
         })}
       />
 
