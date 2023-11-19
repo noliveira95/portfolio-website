@@ -130,7 +130,7 @@ function ContactForm() {
 
       <DialogPopup
         title="Message Sent!"
-        description="Thank you for your inquiry"
+        description="Thank you for your inquiry, I'll get back to you as soon as possible."
         buttonText="Finish"
         isOpen={dialogIsOpen}
         closeDialog={closeDialog}
