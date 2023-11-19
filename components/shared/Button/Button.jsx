@@ -1,17 +1,15 @@
 import React from "react";
 import styles from "./Button.module.css";
 import { DownloadIcon } from "@radix-ui/react-icons";
-import Link from "next/link";
+// import Link from "next/link";
 
-function Button({ btnText, btnLink, btnIcon }) {
+function Button({ btnText, btnIcon, onClick }) {
   return (
     <>
-      <Link type="button" href={btnLink}>
-        <button className={styles["btn"]}>
-          {btnIcon}
-          {btnText}
-        </button>
-      </Link>
+      <button className={styles["btn"]} type="button" onClick={onClick}>
+        {btnIcon}
+        {btnText}
+      </button>
     </>
   );
 }

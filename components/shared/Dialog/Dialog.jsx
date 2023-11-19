@@ -1,6 +1,7 @@
 import React from "react";
 import { Dialog } from "@headlessui/react";
 import styles from "./Dialog.module.css";
+import Button from "../Button/Button";
 
 function DialogPopup({ title, description, buttonText, isOpen, closeDialog }) {
   return (
@@ -15,9 +16,7 @@ function DialogPopup({ title, description, buttonText, isOpen, closeDialog }) {
           {description}
         </Dialog.Description>
         <div className={styles["dialog-buttons"]}>
-          <button className={styles["dialog-button"]} onClick={closeDialog}>
-            {buttonText}
-          </button>
+          <Button onClick={closeDialog} btnText={buttonText} />
         </div>
       </Dialog.Panel>
     </Dialog>
