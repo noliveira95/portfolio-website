@@ -23,7 +23,7 @@ function Navbar() {
             My Work
           </Link>
         </div>
-        <Button btnLink={"/"} btnText={"Download"} />
+        <Button onClick={null} btnText={"Download"} />
       </nav>
     </>
   );
