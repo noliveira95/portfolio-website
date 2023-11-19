@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import { useForm } from "react-hook-form";
+import { set, useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -9,6 +9,7 @@ import DialogPopup from "../shared/Dialog/Dialog";
 
 function ContactForm() {
   const [dialogIsOpen, setDialogIsOpen] = useState(false);
+  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
   const form = useRef();
   const recaptchaRef = useRef(null);
@@ -34,6 +35,7 @@ function ContactForm() {
     reset();
     recaptchaRef.current.reset();
     setDialogIsOpen(false);
+    setIsButtonDisabled(true);
   };
 
   const onSubmit = (data, e) => {
@@ -117,8 +119,14 @@ function ContactForm() {
       <ReCAPTCHA
         sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_KEY}
         ref={recaptchaRef}
+        onChange={() => setIsButtonDisabled(false)}
       />
-      <input className={styles.submit} type="submit" value="Send" />
+      <input
+        className={styles.submit}
+        type="submit"
+        value="Send"
+        disabled={isButtonDisabled}
+      />
 
       <DialogPopup
         title="Message Sent!"
