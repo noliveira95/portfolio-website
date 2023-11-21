@@ -31,6 +31,12 @@
   border: 1px solid var(--color-primary);
 }
 
+.contact-form-error {
+  color: var(--color-error);
+  font-size: 0.8rem;
+  margin: 0.25rem 0;
+}
+
 .submit {
   width: 100%;
   margin: 1rem;
