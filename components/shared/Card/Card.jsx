@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./Card.module.css";
-import LinkButton from "../Button/LinkButton";
+import Button from "../Button/Button";
 
 function CustomCard({ cardImage, cardTitle, cardText, cardCTA, cardCTAText }) {
   return (
@@ -20,7 +20,8 @@ function CustomCard({ cardImage, cardTitle, cardText, cardCTA, cardCTAText }) {
         <p className={styles["card-description"]}>{cardText}</p>
         {cardCTA && (
           <div className={styles["card-cta"]}>
-            <LinkButton
+            <Button
+              isLinkButton={true}
               btnLink={cardCTA}
               btnText={cardCTAText}
               className={styles["card-button"]}
