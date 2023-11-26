@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./About.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import MyPic from "../../public/images/AISelfieGrayBG.jpg";
+import MyPic from "../../public/images/SelfieGrayBG.jpg";
 
 function About() {
   return (
