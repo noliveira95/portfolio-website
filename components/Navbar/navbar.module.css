@@ -12,12 +12,30 @@
   background-color: var(--color-base-pewter);
 }
 
+.nav-links-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   object-fit: cover;
   width: 3rem;
   height: 3rem;
+  margin: 0 20px;
 }
 
 .nav-link {
   margin: 1.2rem;
+}
+
+.social-icons-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  margin: 0 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-primary);
 }
