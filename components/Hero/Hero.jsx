@@ -16,7 +16,7 @@ function Hero() {
             Creating outstanding digital experiences for users, businesses, and
             beyond.
           </p>
-          <Button onClick={null} btnText={"Download"} />
+          {/* <Button onClick={null} btnText="Contact Me" /> */}
         </div>
       </section>
     </>
