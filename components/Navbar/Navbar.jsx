@@ -5,6 +5,7 @@ import Link from "next/link";
 import logo from "../../public/Olive256x256.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Button from "../shared/Button/Button";
 
 function Navbar() {
   return (
@@ -37,6 +38,7 @@ function Navbar() {
               className={styles["social-icon"]}
             />
           </Link>
+          <Button isLinkButton={true} btnText="Contact Me" btnLink="/" />
         </div>
       </nav>
     </>

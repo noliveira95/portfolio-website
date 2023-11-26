@@ -2,6 +2,7 @@
   background: var(--color-primary);
   color: var(--color-base-pewter);
   padding: 0.5rem 1rem;
+  margin: 0 1rem;
   cursor: pointer;
   display: flex;
   align-items: center;
