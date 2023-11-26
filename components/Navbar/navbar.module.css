@@ -39,3 +39,7 @@
   height: 1.5rem;
   color: var(--color-primary);
 }
+
+.social-icon:hover {
+  color: var(--color-base-black);
+}

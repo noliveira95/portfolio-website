@@ -3,7 +3,8 @@ import styles from "./Navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../public/Olive256x256.png";
-import { LinkedInLogoIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function Navbar() {
   return (
@@ -24,8 +25,18 @@ function Navbar() {
           </Link>
         </div>
         <div className={styles["social-icons-wrapper"]}>
-          <LinkedInLogoIcon className={styles["social-icon"]} />
-          <GitHubLogoIcon className={styles["social-icon"]} />
+          <Link href="/">
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className={styles["social-icon"]}
+            />
+          </Link>
+          <Link href="/">
+            <FontAwesomeIcon
+              icon={faGithub}
+              className={styles["social-icon"]}
+            />
+          </Link>
         </div>
       </nav>
     </>
