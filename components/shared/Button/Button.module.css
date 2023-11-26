@@ -9,6 +9,7 @@
   border: none;
   border-radius: 4px;
   font-family: var(--font-dm-sans), "Roboto", sans-serif;
+  transition: background 0.2s ease-out;
 }
 
 .btn-icon {

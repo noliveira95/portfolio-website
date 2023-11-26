@@ -59,6 +59,7 @@ p {
 
 a {
   color: var(--color-primary);
+  transition: color 0.2s ease-out;
 }
 
 a:hover {
