@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../public/Olive256x256.png";
+import logo from "../../public/images/logos/NickOliveLogo3Cropped.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Button from "../shared/Button/Button";
