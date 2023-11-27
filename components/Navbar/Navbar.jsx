@@ -7,7 +7,7 @@ import Link from "next/link";
 import logo from "../../public/images/logos/NickOliveLogo3Cropped.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import Button from "../shared/Button/Button";
 
 function Navbar() {
@@ -26,39 +26,46 @@ function Navbar() {
         <Link href="/">
           <Image src={logo} alt="Logo" className={styles.logo} />
         </Link>
-        <ul
+        <div
           className={`${styles["nav-links"]} ${isActive ? styles.active : ""}`}
         >
-          <li className={styles["nav-link"]} onClick={removeActive}>
-            <Link href="/">Who Am I</Link>
-          </li>
-          <li className={styles["nav-link"]} onClick={removeActive}>
-            <Link href="/">My Skills</Link>
-          </li>
-          <li className={styles["nav-link"]} onClick={removeActive}>
-            <Link href="/">My Work</Link>
-          </li>
-        </ul>
-        <div className={styles["cta-wrapper"]}>
-          <Link href="/">
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className={styles["social-icon"]}
-            />
-          </Link>
-          <Link href="/">
-            <FontAwesomeIcon
-              icon={faGithub}
-              className={styles["social-icon"]}
-            />
-          </Link>
+          <ul className={styles["nav-links-list"]}>
+            <li className={styles["nav-link"]} onClick={removeActive}>
+              <Link href="/">Who Am I</Link>
+            </li>
+            <li className={styles["nav-link"]} onClick={removeActive}>
+              <Link href="/">My Skills</Link>
+            </li>
+            <li className={styles["nav-link"]} onClick={removeActive}>
+              <Link href="/">My Work</Link>
+            </li>
+          </ul>
           <Button isLinkButton={true} btnText="Contact Me" btnLink="/" />
+
+          <div className={styles["social-icon-wrapper"]}>
+            <Link href="/">
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className={styles["social-icon"]}
+              />
+            </Link>
+            <Link href="/">
+              <FontAwesomeIcon
+                icon={faGithub}
+                className={styles["social-icon"]}
+              />
+            </Link>
+          </div>
         </div>
         <div
           className={`${styles.hamburger} ${isActive ? styles.active : ""}`}
           onClick={toggleActive}
         >
-          <FontAwesomeIcon icon={faBars} />
+          {isActive ? (
+            <FontAwesomeIcon icon={faClose} />
+          ) : (
+            <FontAwesomeIcon icon={faBars} />
+          )}
         </div>
         {/* <Link className={styles["nav-link"]} href="/">
             Who Am I
