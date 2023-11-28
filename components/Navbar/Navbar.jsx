@@ -47,12 +47,14 @@ function Navbar() {
               <FontAwesomeIcon
                 icon={faLinkedin}
                 className={styles["social-icon"]}
+                size="xl"
               />
             </Link>
             <Link href="/">
               <FontAwesomeIcon
                 icon={faGithub}
                 className={styles["social-icon"]}
+                size="xl"
               />
             </Link>
           </div>
