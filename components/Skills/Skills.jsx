@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Skills() {
   return (
-    <div id={styles.skills}>
+    <section id={styles.skills}>
       <h2 className={styles["skills-title"]}>My Skills</h2>
       <div className={styles["skills-container"]}>
         <div className={styles["skill-section"]}>
@@ -50,7 +50,7 @@ function Skills() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
