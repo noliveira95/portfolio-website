@@ -62,6 +62,7 @@ p {
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 1rem;
+  max-width: 40rem;
 }
 
 a {
@@ -88,6 +89,7 @@ a:hover {
   }
   p {
     font-size: 0.875rem;
+    max-width: 30rem;
   }
   p a {
     font-size: 0.875rem;

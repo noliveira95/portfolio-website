@@ -17,5 +17,14 @@
 
 .about-paragraph {
   padding: 0 40px;
-  max-width: 40rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .about-paragraph {
+    padding: 0;
+    margin-top: 20px;
+  }
 }
