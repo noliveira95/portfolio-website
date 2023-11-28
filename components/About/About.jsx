@@ -9,7 +9,7 @@ function About() {
     <section id={styles.about}>
       <h2>Who Am I?</h2>
       <div className={styles["about-content"]}>
-        <Image src={MyPic} alt="Picture of Nicholas" width={240} height={240} />
+        <Image src={MyPic} alt="Picture of Nicholas" width={200} height={200} />
         <p className={styles["about-paragraph"]}>
           My name is Nicholas Oliveira. I&apos;m a front-end web developer and
           UI/UX designer located in Las Vegas, NV. Technologies that I commonly
