@@ -1,8 +1,12 @@
+"use client";
+
 import React from "react";
 import styles from "./Skills.module.css";
 import Image from "next/image";
+import { useMediaQuery } from "@uidotdev/usehooks";
 
 function Skills() {
+  const isMobile = useMediaQuery("only screen and (max-width: 768px)");
   return (
     <section id={styles.skills}>
       <h2 className={styles["skills-title"]}>My Skills</h2>
@@ -11,8 +15,8 @@ function Skills() {
           <Image
             src="/images/icons/code_development_icon.png"
             alt="Developer icon"
-            width={100}
-            height={100}
+            width={isMobile ? 60 : 100}
+            height={isMobile ? 60 : 100}
           />
           <h3>Front-end Development</h3>
           <p>
@@ -32,8 +36,8 @@ function Skills() {
           <Image
             src="/images/icons/eye_icon.png"
             alt="Developer icon"
-            width={100}
-            height={100}
+            width={isMobile ? 60 : 100}
+            height={isMobile ? 60 : 100}
           />
           <h3>UX/UI Design</h3>
           <p>
