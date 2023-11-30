@@ -3,10 +3,14 @@
 import React from "react";
 import styles from "./Skills.module.css";
 import Image from "next/image";
-import { useMediaQuery } from "@uidotdev/usehooks";
+import { useMediaQuery, useIsClient } from "@uidotdev/usehooks";
 
 function Skills() {
+  const isClient = useIsClient();
   const isMobile = useMediaQuery("only screen and (max-width: 768px)");
+  if (isClient === false) {
+    return null;
+  }
   return (
     <section id={styles.skills}>
       <h2 className={styles["skills-title"]}>My Skills</h2>
