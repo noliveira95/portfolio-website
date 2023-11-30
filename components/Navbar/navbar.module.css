@@ -39,7 +39,7 @@
 .social-icon {
   margin: 0 0.5rem;
   /* width: 1.5rem;
-  height: 1.5rem; */
+    height: 1.5rem; */
   color: var(--color-primary);
   transition: color 0.2s ease-out;
 }
