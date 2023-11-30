@@ -24,10 +24,11 @@ function Skills() {
           </p>
           <div className={styles["tools-list-wrapper"]}>
             <h4 className={styles["skills-subheading"]}>
-              Languages and Frameworks:
+              Tools that I work with:
             </h4>
             <p>
-              HTML/CSS, JavaScript, TypeScript, Dart, React, Next.js, Flutter
+              HTML/CSS, JavaScript, TypeScript, Dart, React, Next.js, Flutter,
+              Webflow
             </p>
           </div>
         </div>
