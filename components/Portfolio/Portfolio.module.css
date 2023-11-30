@@ -85,3 +85,33 @@
 .active {
   background-color: var(--color-base-pewter);
 }
+
+@media screen and (max-width: 768px) {
+  .project-container {
+    width: 300px;
+  }
+  .project-items {
+    width: 300px;
+  }
+  .project-controls {
+    width: 300px;
+  }
+  .project-image {
+    width: 300px;
+    height: 300px;
+  }
+  .client-logo-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+  .client-logo {
+    width: 120px;
+    height: 120px;
+  }
+  .project-title {
+    font-size: 1.5rem;
+  }
+  .project-description {
+    font-size: 1rem;
+  }
+}
