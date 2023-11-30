@@ -69,30 +69,6 @@ function Navbar() {
             <FontAwesomeIcon icon={faBars} />
           )}
         </div>
-        {/* <Link className={styles["nav-link"]} href="/">
-            Who Am I
-          </Link>
-          <Link className={styles["nav-link"]} href="/">
-            My Skills
-          </Link>
-          <Link className={styles["nav-link"]} href="/">
-            My Work
-          </Link> */}
-        {/* <div className={styles["cta-wrapper"]}>
-          <Link href="/">
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className={styles["social-icon"]}
-            />
-          </Link>
-          <Link href="/">
-            <FontAwesomeIcon
-              icon={faGithub}
-              className={styles["social-icon"]}
-            />
-          </Link>
-          <Button isLinkButton={true} btnText="Contact Me" btnLink="/" />
-        </div> */}
       </nav>
     </>
   );
