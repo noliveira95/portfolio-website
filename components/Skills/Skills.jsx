@@ -2,7 +2,6 @@
 
 import React from "react";
 import styles from "./Skills.module.css";
-import Image from "next/image";
 import SkillCard from "./SkillCard";
 // import { useMediaQuery, useIsClient } from "@uidotdev/usehooks";
 
