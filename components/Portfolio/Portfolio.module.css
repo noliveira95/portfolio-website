@@ -11,12 +11,6 @@
   color: var(--color-base-pewter);
 }
 
-.project-with-btns {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .project-container {
   width: 800px;
 }
@@ -27,6 +21,13 @@
   align-items: center;
   justify-content: center;
   /* margin: 0 20px; */
+}
+
+.project-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
 }
 
 .project-image {

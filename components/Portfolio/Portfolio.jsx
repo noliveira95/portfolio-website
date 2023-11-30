@@ -5,7 +5,6 @@ import styles from "./Portfolio.module.css";
 import Projects from "./Projects/Projects";
 import data from "./Projects/projects.json";
 import validateData from "./Projects/validate";
-import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 
 function Portfolio() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,22 +47,15 @@ function Portfolio() {
     <>
       <section id={styles.portfolio}>
         <h2 className={styles["portfolio-heading"]}>Portfolio</h2>
-
         <div className={styles["project-carousel"]}>
-          <div className={styles["project-with-btns"]}>
-            <div className={styles.left} onClick={handlePrevious}>
-              <ChevronLeftIcon width={50} height={80} color="#e9eaec" />
-            </div>
-            <div className={styles["project-container"]}>
-              <Projects
-                currentIndex={currentIndex}
-                data={isValid ? data : []}
-                handleDotClick={handleDotClick}
-              />
-            </div>
-            <div className={styles.right} onClick={handleNext}>
-              <ChevronRightIcon width={50} height={80} color="#e9eaec" />
-            </div>
+          <div className={styles["project-container"]}>
+            <Projects
+              currentIndex={currentIndex}
+              data={isValid ? data : []}
+              handleDotClick={handleDotClick}
+              handlePrevious={handlePrevious}
+              handleNext={handleNext}
+            />
           </div>
         </div>
       </section>

@@ -4,8 +4,15 @@ import React from "react";
 import styles from "../Portfolio.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 import CustomCard from "@/components/shared/Card/Card";
+import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 
-function Projects({ currentIndex, data, handleDotClick }) {
+function Projects({
+  currentIndex,
+  data,
+  handleDotClick,
+  handlePrevious,
+  handleNext,
+}) {
   return (
     <>
       <div className={styles["project-items"]}>
@@ -22,16 +29,24 @@ function Projects({ currentIndex, data, handleDotClick }) {
           cardCTA={data.length > 0 ? data[currentIndex].client_url : "#"}
           cardCTAText={"Visit Site"}
         />
-        <div className={styles.indicator}>
-          {data.map((_, index) => (
-            <div
-              key={index}
-              className={`${styles.dot} ${
-                index === currentIndex ? styles.active : ""
-              }`}
-              onClick={() => handleDotClick(index)}
-            ></div>
-          ))}
+        <div className={styles["project-controls"]}>
+          <div className={styles.left} onClick={handlePrevious}>
+            <ChevronLeftIcon width={50} height={80} color="#e9eaec" />
+          </div>
+          <div className={styles.indicator}>
+            {data.map((_, index) => (
+              <div
+                key={index}
+                className={`${styles.dot} ${
+                  index === currentIndex ? styles.active : ""
+                }`}
+                onClick={() => handleDotClick(index)}
+              ></div>
+            ))}
+          </div>
+          <div className={styles.right} onClick={handleNext}>
+            <ChevronRightIcon width={50} height={80} color="#e9eaec" />
+          </div>
         </div>
       </div>
     </>
