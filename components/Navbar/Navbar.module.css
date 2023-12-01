@@ -36,7 +36,7 @@
 }
 
 .social-icon {
-  margin: 0 0.5rem;
+  margin: 0 0 0 1rem;
   /* width: 1.5rem;
     height: 1.5rem; */
   color: var(--color-primary);
@@ -62,13 +62,13 @@
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    top: 70px;
+    top: 64px;
     right: 0;
     width: 100%;
     height: 100vh;
     transition: 0.2s ease-in-out;
     background-color: var(--color-base-pewter);
-    padding: 10px;
+    padding: 10px 10px 80px 10px;
     opacity: 0;
     pointer-events: none;
   }
@@ -88,5 +88,9 @@
 
   .social-icon-wrapper {
     margin: 16px 0;
+  }
+
+  .social-icon {
+    margin: 0 0.5rem;
   }
 }
