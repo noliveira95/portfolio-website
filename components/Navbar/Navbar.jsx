@@ -31,7 +31,7 @@ function Navbar() {
         >
           <ul className={styles["nav-links-list"]}>
             <li className={styles["nav-link"]} onClick={removeActive}>
-              <Link href="/">Who Am I</Link>
+              <Link href="/#who-am-i">Who Am I</Link>
             </li>
             <li className={styles["nav-link"]} onClick={removeActive}>
               <Link href="/">My Skills</Link>
