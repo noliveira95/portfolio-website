@@ -44,7 +44,7 @@ function Portfolio() {
   }
 
   return (
-    <>
+    <div id="my-work">
       <section id={styles.portfolio}>
         <h2 className={styles["portfolio-heading"]}>Portfolio</h2>
         <div className={styles["project-carousel"]}>
@@ -59,7 +59,7 @@ function Portfolio() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

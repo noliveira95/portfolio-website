@@ -34,13 +34,20 @@ function Navbar() {
               <Link href="/#who-am-i">Who Am I</Link>
             </li>
             <li className={styles["nav-link"]} onClick={removeActive}>
-              <Link href="/">My Skills</Link>
+              <Link href="/#my-skills">My Skills</Link>
             </li>
             <li className={styles["nav-link"]} onClick={removeActive}>
-              <Link href="/">My Work</Link>
+              <Link href="/#my-work">My Work</Link>
+            </li>
+            <li className={styles["nav-link"]} onClick={removeActive}>
+              <Link href="/#testimonials">Testimonials</Link>
             </li>
           </ul>
-          <Button isLinkButton={true} btnText="Contact Me" btnLink="/" />
+          <Button
+            isLinkButton={true}
+            btnText="Contact Me"
+            btnLink="/#contact-me"
+          />
 
           <div className={styles["social-icon-wrapper"]}>
             <Link href="/">

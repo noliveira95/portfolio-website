@@ -18,6 +18,10 @@
   /* color: #333; */
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 body {
   background-color: var(--color-base-pewter);
   overflow: hidden;

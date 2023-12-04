@@ -4,12 +4,14 @@ import ContactForm from "./ContactForm";
 
 function Contact() {
   return (
-    <section id={styles.contact}>
-      <h2>Contact Me</h2>
-      <div className={styles["contact-form-wrapper"]}>
-        <ContactForm />
-      </div>
-    </section>
+    <div id="contact-me">
+      <section id={styles.contact}>
+        <h2>Contact Me</h2>
+        <div className={styles["contact-form-wrapper"]}>
+          <ContactForm />
+        </div>
+      </section>
+    </div>
   );
 }
 
