@@ -16,7 +16,11 @@ function Hero() {
             Creating outstanding digital experiences for users, businesses, and
             beyond.
           </p>
-          {/* <Button onClick={null} btnText="Contact Me" /> */}
+          <Button
+            isLinkButton={true}
+            btnText="Learn More"
+            btnLink={"/#who-am-i"}
+          />
         </div>
       </section>
     </>

@@ -3,6 +3,8 @@ import styles from "./About.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import MyPic from "../../public/images/SelfieGrayBG.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 function About() {
   return (
@@ -28,6 +30,14 @@ function About() {
             </Link>
           </p>
         </div>
+        <Link href="/#my-skills" className={styles.cta}>
+          See My Experience
+          <FontAwesomeIcon
+            icon={faArrowDown}
+            size="sm"
+            className={styles["cta-icon"]}
+          />
+        </Link>
       </section>
     </div>
   );
