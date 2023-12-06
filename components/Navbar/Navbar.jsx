@@ -39,9 +39,9 @@ function Navbar() {
             <li className={styles["nav-link"]} onClick={removeActive}>
               <Link href="/#my-work">My Work</Link>
             </li>
-            <li className={styles["nav-link"]} onClick={removeActive}>
+            {/* <li className={styles["nav-link"]} onClick={removeActive}>
               <Link href="/#testimonials">Testimonials</Link>
-            </li>
+            </li> */}
           </ul>
           <Button
             isLinkButton={true}
