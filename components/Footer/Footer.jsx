@@ -9,7 +9,8 @@ function Footer() {
           <p>
             &copy; 2023 Nick Olive. All rights reserved.{" "}
             <span className={styles["footer-text-span"]}>
-              Designed and built by Nicholas Oliveira
+              Designed and built by{" "}
+              <span className={styles["footer-name"]}>Nicholas Oliveira.</span>
             </span>
           </p>
         </div>

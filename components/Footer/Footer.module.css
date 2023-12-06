@@ -1,21 +1,27 @@
 /* FILEPATH: /Users/nicholasoliveira/Projects/portfolio-website/components/Footer/Footer.module.css */
 
 .footer {
-  background-color: #f5f5f5;
+  background-color: var(--color-primary);
   padding: 20px;
   text-align: center;
 }
 
 .footer-content {
   margin: 0;
-  color: #888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-text {
-  color: #333;
+  color: var(--color-base-pewter);
   text-decoration: none;
 }
 
 .footer-text:hover {
   text-decoration: underline;
+}
+
+.footer-name {
+  color: var(--color-base-white);
 }
