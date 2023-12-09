@@ -93,17 +93,17 @@ a:hover {
     font-size: 1.25rem;
   }
   h4 {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
   p {
-    font-size: 0.875rem;
+    font-size: 1rem;
     max-width: 30rem;
   }
   p span {
-    font-size: 0.875rem;
+    font-size: 1rem;
     max-width: 30rem;
   }
   p a {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
