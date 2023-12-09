@@ -106,8 +106,8 @@ function ContactForm() {
         className={styles["contact-form-field"]}
         type="text"
         placeholder="Additional Information"
-        name="additional_information"
-        {...register("additional_information", {
+        name="message"
+        {...register("message", {
           required: false,
           maxLength: {
             value: 250,
