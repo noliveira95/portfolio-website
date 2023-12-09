@@ -3,7 +3,14 @@ import React from "react";
 import styles from "./Card.module.css";
 import Button from "../Button/Button";
 
-function CustomCard({ cardImage, cardTitle, cardText, cardCTA, cardCTAText }) {
+function CustomCard({
+  cardImage,
+  cardTitle,
+  cardText,
+  cardCTA,
+  cardCTAText,
+  isActive,
+}) {
   return (
     <div className={styles["card"]}>
       <div className={styles["card-image-wrapper"]}>
@@ -25,6 +32,7 @@ function CustomCard({ cardImage, cardTitle, cardText, cardCTA, cardCTAText }) {
               btnLink={cardCTA}
               btnText={cardCTAText}
               className={styles["card-button"]}
+              isActive={isActive}
             />
           </div>
         )}

@@ -2,23 +2,25 @@
   {
     "id": 1,
     "title": "Climate Reality: Las Vegas",
-    "description": "A simple website for a small business.",
+    "description": "Website for a non-profit organization. Built using WordPress.",
     "client": "Climate Reality",
     "client_logo": "/images/logos/ClimateRealityLogo.png",
     "client_url": "https://climaterealitylasvegas.com",
     "date_completed": "2023-10-01",
     "skills_applied": ["HTML", "CSS", "JavaScript"],
-    "featured_image": "/images/projects/CRLVHome.png"
+    "featured_image": "/images/projects/CRLVHome.png",
+    "is_active": true
   },
   {
     "id": 2,
     "title": "Intagly",
-    "description": "A more complex website for a larger business, with features such as e-commerce and a blog.",
+    "description": "Website for a 3D printing service. Built using Flutter.",
     "client": "Intagly",
     "client_logo": "/images/logos/IntaglyLogo.png",
     "client_url": "https://intagly.com",
     "date_completed": "2023-11-01",
     "skills_applied": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-    "featured_image": "/images/projects/IntaglyHome.png"
+    "featured_image": "/images/projects/IntaglyHome.png",
+    "is_active": false
   }
 ]

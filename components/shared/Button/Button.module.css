@@ -21,3 +21,10 @@
   background: var(--color-base-black);
   color: var(--color-base-pewter);
 }
+
+.disabled {
+  background: var(--color-disabled);
+  color: var(--color-base-white);
+  cursor: not-allowed;
+  pointer-events: none;
+}

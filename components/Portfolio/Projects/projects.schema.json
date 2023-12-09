@@ -8,6 +8,7 @@
       "description": { "type": "string" },
       "featured_image": { "type": "string" },
       "id": { "type": "uint8" },
+      "is_active": { "type": "boolean" },
       "skills_applied": { "elements": { "type": "string" } },
       "title": { "type": "string" }
     }

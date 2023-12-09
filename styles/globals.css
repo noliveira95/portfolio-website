@@ -5,6 +5,7 @@
   --color-base-pewter: #e9eaec;
   --color-primary: #003190;
   --color-error: #dc143c;
+  --color-disabled: #909090;
 }
 
 * {
