@@ -20,7 +20,7 @@ function About() {
           />
           <p className={styles["about-paragraph"]}>
             My name is Nicholas Oliveira. I&apos;m a front-end web developer and
-            UI/UX designer located in Las Vegas, NV. Technologies that I
+            UX/UI designer located in Las Vegas, NV. Technologies that I
             commonly use in my work include HTML/CSS, JavaScript, TypeScript,
             React, Webflow, and WordPress. I also utilize Figma, FigJam, and
             Adobe for design work such as creating mockups, prototyping, and

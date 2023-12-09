@@ -20,7 +20,7 @@ function Skills() {
             }
             subtitle={"Tools that I work with:"}
             description2={
-              "HTML/CSS, JavaScript, TypeScript, Dart, React, Next.js, Flutter, Webflow"
+              "HTML/CSS, JavaScript, TypeScript, Dart, React, Next.js, Flutter, Webflow, WordPress"
             }
           />
           <SkillCard
