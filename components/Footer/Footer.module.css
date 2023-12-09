@@ -13,14 +13,14 @@
 }
 
 .footer-text {
-  color: var(--color-primary);
+  color: var(--color-base-black);
   text-decoration: none;
 }
 
-.footer-text:hover {
+/* .footer-text:hover {
   text-decoration: underline;
-}
+} */
 
 .footer-name {
-  color: var(--color-base-black);
+  color: var(--color-primary);
 }
