@@ -11,8 +11,8 @@ function Hero() {
           <h1>
             <span className={styles["intro-name"]}>Nicholas Oliveira</span>
           </h1>
-          <h1>Web Developer & UX Designer</h1>
-          <p>
+          <h1>Front-end Developer & UX/UI Designer</h1>
+          <p className={styles["intro-paragraph"]}>
             Creating outstanding digital experiences for users, businesses, and
             beyond.
           </p>
