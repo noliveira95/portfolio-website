@@ -20,27 +20,39 @@ function Footer() {
           </p>
         </div>
         <div className={styles["footer-social"]}>
-          <Link href="/">
+          <a
+            href="https://www.linkedin.com/in/nick-olive/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon
               icon={faLinkedin}
               className={styles["social-icon"]}
               size="xl"
             />
-          </Link>{" "}
-          <Link href="/">
+          </a>{" "}
+          <a
+            href="https://www.github.com/noliveira95"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon
               icon={faGithub}
               className={styles["social-icon"]}
               size="xl"
             />
-          </Link>
-          <Link href="/">
+          </a>
+          <a
+            href="https://behance.net/nicholaoliveir10"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon
               icon={faBehance}
               className={styles["social-icon"]}
               size="xl"
             />
-          </Link>
+          </a>
         </div>
       </div>
     </div>

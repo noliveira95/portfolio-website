@@ -6,7 +6,11 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "../../public/images/logos/NickOliveLogo3Cropped.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faBehance,
+} from "@fortawesome/free-brands-svg-icons";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import Button from "../shared/Button/Button";
 
@@ -50,21 +54,39 @@ function Navbar() {
           />
 
           <div className={styles["social-icon-wrapper"]}>
-            {/* Change links to a tags */}
-            <Link href="/">
+            <a
+              href="https://www.linkedin.com/in/nick-olive/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 icon={faLinkedin}
                 className={styles["social-icon"]}
                 size="xl"
               />
-            </Link>
-            <Link href="/">
+            </a>
+            <a
+              href="https://www.github.com/noliveira95"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 icon={faGithub}
                 className={styles["social-icon"]}
                 size="xl"
               />
-            </Link>
+            </a>
+            <a
+              href="https://behance.net/nicholaoliveir10"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faBehance}
+                className={styles["social-icon"]}
+                size="xl"
+              />
+            </a>
           </div>
         </div>
         <div
