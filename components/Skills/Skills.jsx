@@ -28,7 +28,7 @@ function Skills() {
             imageAlt={"Eye Icon"}
             title={"UX/UI Design"}
             description={
-              "My experience includes creating wireframes, mockups and prototypes, as well as conducting user research utilizing methods such as personas and user journey maps."
+              "My experience ranges from building wireframes and prototypes to high fidelity designs. I apply design thinking methodologies to create user-centered products."
             }
             subtitle={"Things I design:"}
             description2={
