@@ -85,23 +85,26 @@ a:hover {
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 2rem;
+    margin-bottom: 0.8rem;
   }
   h2 {
     font-size: 1.5rem;
+    margin-bottom: 0.8rem;
   }
   h3 {
     font-size: 1.25rem;
+    margin-bottom: 0.8rem;
   }
   h4 {
     font-size: 1rem;
   }
   p {
     font-size: 1rem;
-    max-width: 30rem;
+    max-width: 20rem;
   }
   p span {
     font-size: 1rem;
-    max-width: 30rem;
+    max-width: 20rem;
   }
   p a {
     font-size: 1rem;
