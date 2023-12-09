@@ -7,8 +7,8 @@ function Hero() {
     <>
       <section id={styles.intro}>
         <div className={styles["intro-content"]}>
-          <h3>Hello, I&apos;m</h3>
-          <h1>
+          <h3 style={{ marginBottom: "0.5rem" }}>Hello, I&apos;m</h3>
+          <h1 style={{ marginBottom: "0.5rem" }}>
             <span className={styles["intro-name"]}>Nicholas Oliveira</span>
           </h1>
           <h1>Front-end Developer & UX/UI Designer</h1>
