@@ -37,9 +37,9 @@ function Projects({
           isActive={data.length > 0 ? data[currentIndex].is_active : true}
         />
         <div className={styles["project-controls"]}>
-          <div className={styles.left} onClick={handlePrevious}>
-            <ChevronLeftIcon width={50} height={80} color="#e9eaec" />
-          </div>
+          <button className={styles.left} onClick={handlePrevious}>
+            <ChevronLeftIcon width={50} height={80} />
+          </button>
           <div className={styles.indicator}>
             {data.map((_, index) => (
               <div
@@ -51,9 +51,9 @@ function Projects({
               ></div>
             ))}
           </div>
-          <div className={styles.right} onClick={handleNext}>
-            <ChevronRightIcon width={50} height={80} color="#e9eaec" />
-          </div>
+          <button className={styles.right} onClick={handleNext}>
+            <ChevronRightIcon width={50} height={80} />
+          </button>
         </div>
       </div>
     </>

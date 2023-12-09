@@ -5,6 +5,7 @@ import styles from "./Portfolio.module.css";
 import Projects from "./Projects/Projects";
 import data from "./Projects/projects.json";
 import validateData from "./Projects/validate";
+import { set } from "react-hook-form";
 
 function Portfolio() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,16 +22,14 @@ function Portfolio() {
     } else {
       setCurrentIndex(currentIndex + 1);
     }
-    console.log(currentIndex);
   };
 
   const handlePrevious = () => {
-    if (currentIndex < 0) {
+    if (currentIndex === 0) {
       setCurrentIndex(data.length - 1);
     } else {
       setCurrentIndex(currentIndex - 1);
     }
-    console.log(currentIndex);
   };
 
   const handleDotClick = (index) => {

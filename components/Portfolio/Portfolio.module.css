@@ -53,10 +53,24 @@
 
 .left {
   margin-right: 28px;
+  background-color: var(--color-primary);
+  color: var(--color-base-pewter);
+  border: none;
+}
+
+.left:hover {
+  cursor: pointer;
 }
 
 .right {
   margin-left: 28px;
+  background-color: var(--color-primary);
+  color: var(--color-base-pewter);
+  border: none;
+}
+
+.right:hover {
+  cursor: pointer;
 }
 
 .project-title {
