@@ -69,6 +69,13 @@ p {
   max-width: 40rem;
 }
 
+p span {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  max-width: 40rem;
+}
+
 a {
   color: var(--color-primary);
   transition: color 0.2s ease-out;
@@ -92,6 +99,10 @@ a:hover {
     font-size: 0.875rem;
   }
   p {
+    font-size: 0.875rem;
+    max-width: 30rem;
+  }
+  p span {
     font-size: 0.875rem;
     max-width: 30rem;
   }

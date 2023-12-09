@@ -50,6 +50,7 @@ function Navbar() {
           />
 
           <div className={styles["social-icon-wrapper"]}>
+            {/* Change links to a tags */}
             <Link href="/">
               <FontAwesomeIcon
                 icon={faLinkedin}
