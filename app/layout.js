@@ -17,9 +17,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata = {
-  title: "Nicholas Oliveira: Front-end Developer & UX Designer",
+  title: "Nicholas Oliveira: Front-end Developer & UX/UI Designer",
   description:
-    "Freelance front-end developer and UX designer based in Las Vegas, NV",
+    "Freelance front-end developer and UX/UI designer based in Las Vegas, NV",
 };
 
 export default function RootLayout({ children }) {
