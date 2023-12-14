@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import { Work_Sans, DM_Sans } from "next/font/google";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { SpeedInsights } from "@vercel/speed-insights";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 config.autoAddCss = false;
 
 const workSans = Work_Sans({
