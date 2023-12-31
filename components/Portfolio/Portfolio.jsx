@@ -5,16 +5,17 @@ import styles from "./Portfolio.module.css";
 import Projects from "./Projects/Projects";
 import data from "./Projects/projects.json";
 import validateData from "./Projects/validate";
-import { set } from "react-hook-form";
 
 function Portfolio() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isValid, setIsValid] = useState(false);
 
+  const projectData = data;
+
   useEffect(() => {
-    const valid = validateData(data);
+    const valid = validateData(projectData);
     setIsValid(valid);
-  }, []);
+  }, [projectData]);
 
   const handleNext = () => {
     if (currentIndex === data.length - 1) {
