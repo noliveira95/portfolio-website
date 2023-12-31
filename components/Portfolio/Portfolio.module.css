@@ -91,9 +91,10 @@
 }
 
 .dot {
-  background-color: black;
+  background-color: var(--color-primary);
   width: 15px;
   height: 15px;
+  border: 2px solid var(--color-base-pewter);
   border-radius: 50%;
 }
 
