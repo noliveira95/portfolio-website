@@ -37,12 +37,6 @@ function Portfolio() {
     setCurrentIndex(index);
   };
 
-  if (!isValid) {
-    console.log("Data is not valid");
-  } else {
-    console.log("Data is valid");
-  }
-
   return (
     <div id="my-work">
       <section id={styles.portfolio}>
