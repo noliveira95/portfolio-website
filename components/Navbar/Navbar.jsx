@@ -46,12 +46,14 @@ function Navbar() {
             {/* <li className={styles["nav-link"]} onClick={removeActive}>
               <Link href="/#testimonials">Testimonials</Link>
             </li> */}
+            <li onClick={removeActive}>
+              <Button
+                isLinkButton={true}
+                btnText="Contact Me"
+                btnLink="/#contact-me"
+              />
+            </li>
           </ul>
-          <Button
-            isLinkButton={true}
-            btnText="Contact Me"
-            btnLink="/#contact-me"
-          />
 
           <div className={styles["social-icon-wrapper"]}>
             <a
