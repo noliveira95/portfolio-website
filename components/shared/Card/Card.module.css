@@ -16,8 +16,7 @@
 .card-image-wrapper {
   display: flex;
   justify-content: center;
-  width: 200px;
-  height: 180px;
+  padding-top: 20px;
 }
 
 .card-image {
@@ -41,11 +40,10 @@
     height: 360px;
   }
   .card-image-wrapper {
-    width: 120px;
-    height: 120px;
+    padding-top: 0px;
   }
   .card-image {
-    width: 120px;
+    width: 160px;
     height: 120px;
   }
   .card-content {

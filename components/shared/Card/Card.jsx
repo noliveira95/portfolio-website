@@ -17,8 +17,8 @@ function CustomCard({
         <Image
           src={cardImage}
           alt="skill"
-          width={160}
-          height={140}
+          width={248}
+          height={120}
           className={styles["card-image"]}
         />
       </div>
