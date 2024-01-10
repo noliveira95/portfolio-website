@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
-  faBehance,
+  faDribbble,
 } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import Button from "../shared/Button/Button";
@@ -79,12 +79,12 @@ function Navbar() {
               />
             </a>
             <a
-              href="https://behance.net/nicholaoliveir10"
+              href="https://dribbble.com/nickolive"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon
-                icon={faBehance}
+                icon={faDribbble}
                 className={styles["social-icon"]}
                 size="xl"
               />
