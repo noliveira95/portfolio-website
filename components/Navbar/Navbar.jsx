@@ -65,6 +65,8 @@ function Navbar() {
                 icon={faLinkedin}
                 className={styles["social-icon"]}
                 size="xl"
+                title="LinkedIn"
+                aria-label="LinkedIn"
               />
             </a>
             <a
@@ -76,6 +78,8 @@ function Navbar() {
                 icon={faGithub}
                 className={styles["social-icon"]}
                 size="xl"
+                title="GitHub"
+                aria-label="GitHub"
               />
             </a>
             <a
@@ -87,6 +91,8 @@ function Navbar() {
                 icon={faDribbble}
                 className={styles["social-icon"]}
                 size="xl"
+                title="Dribbble"
+                aria-label="Dribbble"
               />
             </a>
           </div>
