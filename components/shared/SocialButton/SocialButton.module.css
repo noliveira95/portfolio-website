@@ -1,0 +1,10 @@
+.social-icon {
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .social-icon {
+    margin: 0 12px;
+  }
+}

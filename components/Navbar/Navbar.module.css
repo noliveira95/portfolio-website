@@ -35,18 +35,6 @@
   margin: 1.2rem;
 }
 
-.social-icon {
-  margin: 0 0 0 1rem;
-  /* width: 1.5rem;
-    height: 1.5rem; */
-  color: var(--color-primary);
-  transition: color 0.2s ease-out;
-}
-
-.social-icon:hover {
-  color: var(--color-base-black);
-}
-
 .hamburger {
   display: none;
 }
@@ -84,13 +72,5 @@
 
   .nav-links li {
     margin: 16px 0;
-  }
-
-  .social-icon-wrapper {
-    margin: 16px 0;
-  }
-
-  .social-icon {
-    margin: 0 0.5rem;
   }
 }

@@ -25,12 +25,6 @@
   color: var(--color-primary);
 }
 
-.footer-social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .footer-email {
   margin: 0 4px;
 }
@@ -43,9 +37,5 @@
 @media screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-  }
-
-  .footer-social {
-    margin-top: 10px;
   }
 }
