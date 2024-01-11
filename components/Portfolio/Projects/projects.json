@@ -14,7 +14,7 @@
   {
     "id": 2,
     "title": "Intagly",
-    "description": "Website for a 3D printing service. Built using Flutter.",
+    "description": "Web app for a 3D printing service. Built using Flutter.",
     "client": "Intagly",
     "client_logo": "/images/logos/IntaglyLogo.png",
     "client_url": "https://intagly.com",
