@@ -16,7 +16,7 @@ function Skills() {
             imageAlt={"Developer Icon"}
             title={"Front-end Development"}
             description={
-              "I have 2+ years of experience in front-end web development. My portfolio includes websites, web apps, and mobile applications."
+              "I have 2+ years of experience in front-end development. My portfolio includes websites, web apps, and mobile applications."
             }
             subtitle={"Tools that I work with:"}
             description2={
@@ -28,11 +28,11 @@ function Skills() {
             imageAlt={"Eye Icon"}
             title={"UX/UI Design"}
             description={
-              "My experience ranges from building wireframes and prototypes to high fidelity designs. I apply design thinking methodologies to create user-centered products."
+              "From sketches and wireframes to high-fidelity designs and prototypes. I apply design thinking methodologies to create user-centered products."
             }
             subtitle={"Things I design:"}
             description2={
-              "Websites, Web Apps, Mobile Apps, Design Systems, Information Architecture, Logos"
+              "Websites, Web Apps, Mobile Apps, Design Systems, Information Architecture"
             }
           />
         </div>
