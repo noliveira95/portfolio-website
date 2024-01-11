@@ -2,24 +2,30 @@
   {
     "id": 1,
     "title": "Climate Reality: Las Vegas",
-    "description": "Website for a non-profit organization. Built using WordPress.",
+    "description": "Las Vegas chapter of a non-profit organization, The Climate Reality Project.",
     "client": "Climate Reality",
     "client_logo": "/images/logos/ClimateRealityLogo.png",
     "client_url": "https://climaterealitylasvegas.com",
     "date_completed": "2023-10-01",
-    "skills_applied": ["HTML", "CSS", "JavaScript"],
+    "skills_applied": ["WordPress", "Website", "Web Design", "UX/UI"],
     "featured_image": "/images/projects/CRLVHome.png",
     "is_active": true
   },
   {
     "id": 2,
     "title": "Intagly",
-    "description": "Web app for a 3D printing service. Built using Flutter.",
+    "description": "3D printing service that connects customers with local 3D printer operators.",
     "client": "Intagly",
     "client_logo": "/images/logos/IntaglyLogo.png",
     "client_url": "https://intagly.com",
     "date_completed": "2023-11-01",
-    "skills_applied": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    "skills_applied": [
+      "Flutter",
+      "UX/UI",
+      "Web App",
+      "Mobile App",
+      "Product Design"
+    ],
     "featured_image": "/images/projects/IntaglyHome.png",
     "is_active": false
   }

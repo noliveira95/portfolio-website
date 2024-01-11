@@ -26,14 +26,14 @@ function Projects({
           cardText={
             data.length > 0 ? data[currentIndex].description : "Description"
           }
-          cardCTA={data.length > 0 ? data[currentIndex].client_url : "#"}
-          cardCTAText={
-            data.length > 0
-              ? data[currentIndex].is_active
-                ? "Visit Site"
-                : "Coming Soon"
-              : "Coming Soon"
-          }
+          // cardCTA={data.length > 0 ? data[currentIndex].client_url : "#"}
+          // cardCTAText={
+          //   data.length > 0
+          //     ? data[currentIndex].is_active
+          //       ? "Visit Site"
+          //       : "Coming Soon"
+          //     : "Coming Soon"
+          // }
           isActive={data.length > 0 ? data[currentIndex].is_active : true}
         />
         <div className={styles["project-controls"]}>
