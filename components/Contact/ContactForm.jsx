@@ -6,6 +6,7 @@ import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import DialogPopup from "../shared/Dialog/Dialog";
+import { ThreeDots } from "react-loader-spinner";
 
 function ContactForm() {
   const [dialogIsOpen, setDialogIsOpen] = useState(false);
@@ -18,7 +19,7 @@ function ContactForm() {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm({
     defaultValues: {
       user_name: "",
@@ -38,9 +39,9 @@ function ContactForm() {
     setIsButtonDisabled(true);
   };
 
-  const onSubmit = (data, e) => {
+  const onSubmit = async (data, e) => {
     e.preventDefault();
-    emailjs
+    await emailjs
       .sendForm(
         "contact_service",
         "contact_form",
@@ -121,12 +122,17 @@ function ContactForm() {
         ref={recaptchaRef}
         onChange={() => setIsButtonDisabled(false)}
       />
-      <input
+      <button
         className={styles.submit}
         type="submit"
-        value="Send"
         disabled={isButtonDisabled}
-      />
+      >
+        {isSubmitting ? (
+          <ThreeDots width={24} height={24} color="#e9eaec" />
+        ) : (
+          "Send"
+        )}
+      </button>
 
       <DialogPopup
         title="Message Sent!"
