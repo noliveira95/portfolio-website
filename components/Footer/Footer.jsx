@@ -8,7 +8,7 @@ function Footer() {
       <div className={styles["footer-content"]}>
         <div className={styles["footer-text"]}>
           <p>
-            &copy; 2023 Nicholas J. Oliveira. All rights reserved.
+            &copy; 2024 Nicholas J. Oliveira. All rights reserved.
             <p className={styles["footer-span"]}>
               <a
                 href="mailto:contact@nickolive.com"
