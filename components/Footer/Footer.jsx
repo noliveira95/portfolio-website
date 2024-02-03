@@ -8,9 +8,16 @@ function Footer() {
       <div className={styles["footer-content"]}>
         <div className={styles["footer-text"]}>
           <p>
-            &copy; 2023 Nicholas J. Oliveira. All rights reserved. Designed and
-            built by{" "}
-            <span className={styles["footer-name"]}>Nicholas Oliveira.</span>
+            &copy; 2023 Nicholas J. Oliveira. All rights reserved.
+            <p className={styles["footer-span"]}>
+              <a
+                href="mailto:contact@nickolive.com"
+                target="_blank"
+                title="Email"
+              >
+                contact@nickolive.com
+              </a>
+            </p>
           </p>
         </div>
         <SocialButtonRow />
