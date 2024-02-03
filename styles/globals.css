@@ -30,6 +30,10 @@ html {
   scroll-behavior: smooth !important;
 }
 
+section {
+  height: 100dvh;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 700;
