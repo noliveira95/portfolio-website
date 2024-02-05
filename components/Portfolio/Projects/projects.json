@@ -5,7 +5,7 @@
     "description": "Mobile design concept for an app that helps people find and support local musicians.",
     "client": "NA",
     "logo": "/images/logos/Locart.png",
-    "url": "https://www.figma.com/file/Moxf5Ael1dDkIfu9mYtjox/Locart?type=design&t=LCC87hfnAyuaD79B-6",
+    "url": "https://www.figma.com/file/Moxf5Ael1dDkIfu9mYtjox/Locart?type=design&node-id=389%3A187&mode=design&t=cLf0I6ga9R1hMoPA-1",
     "date_completed": "On-going",
     "skills_applied": [
       "Mobile App Design",
@@ -15,7 +15,7 @@
       "Design System",
       "Figma"
     ],
-    "featured_image": "/images/projects/IntaglyHome.png",
+    "featured_image": "NA",
     "is_active": true,
     "type": "design"
   },
@@ -24,8 +24,8 @@
     "title": "CommentMe!",
     "description": "Design concept for a Chrome extension that streamlines the feedback process for web developers.",
     "client": "NA",
-    "logo": "/images/logos/IntaglyLogo.png",
-    "url": "https://intagly.com",
+    "logo": "/images/logos/CommentMe.png",
+    "url": "https://www.figma.com/file/p0l6ljZb2kiwOBnxpZYHjl/CommentMe-v1?type=design&node-id=74%3A85&mode=design&t=u3cF8AfPq4xkPPME-1",
     "date_completed": "On-going",
     "skills_applied": [
       "Web App Design",

@@ -13,14 +13,15 @@ function Button({
   if (isLinkButton) {
     return (
       <>
-        <Link
+        <a
           className={isActive ? styles.btn : `${styles.btn} ${styles.disabled}`}
           type="button"
           href={btnLink}
+          target="_blank"
         >
           {btnIcon}
           {btnText}
-        </Link>
+        </a>
       </>
     );
   }
