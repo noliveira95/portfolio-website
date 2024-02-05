@@ -8,21 +8,33 @@ function Button({
   btnLink,
   onClick,
   isLinkButton = false,
+  isExternalLinkButton = false,
   isActive = true,
 }) {
   if (isLinkButton) {
     return (
       <>
-        <a
+        <Link
           className={isActive ? styles.btn : `${styles.btn} ${styles.disabled}`}
           type="button"
           href={btnLink}
-          target="_blank"
         >
           {btnIcon}
           {btnText}
-        </a>
+        </Link>
       </>
+    );
+  } else if (isExternalLinkButton) {
+    return (
+      <a
+        className={isActive ? styles.btn : `${styles.btn} ${styles.disabled}`}
+        type="button"
+        href={btnLink}
+        target="_blank"
+      >
+        {btnIcon}
+        {btnText}
+      </a>
     );
   }
   return (

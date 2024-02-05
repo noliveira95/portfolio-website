@@ -37,7 +37,7 @@ function Navbar() {
               <Link href="/#my-skills">My Skills</Link>
             </li>
             <li className={styles["nav-link"]} onClick={removeActive}>
-              <Link href="/#clients">Clients</Link>
+              <Link href="/#projects">Projects</Link>
             </li>
             {/* <li className={styles["nav-link"]} onClick={removeActive}>
               <Link href="/#testimonials">Testimonials</Link>

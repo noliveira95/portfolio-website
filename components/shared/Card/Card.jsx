@@ -28,7 +28,7 @@ function CustomCard({
         {cardCTA && (
           <div className={styles["card-cta"]}>
             <Button
-              isLinkButton={true}
+              isExternalLinkButton={true}
               btnLink={cardCTA}
               btnText={cardCTAText}
               className={styles["card-button"]}
