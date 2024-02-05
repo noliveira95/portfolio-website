@@ -18,22 +18,22 @@ function Projects({
       <div className={styles["project-items"]}>
         <CustomCard
           cardImage={
-            data.length > 0
-              ? data[currentIndex].client_logo
-              : "/Olive256x256.png"
+            data.length > 0 ? data[currentIndex].logo : "/Olive256x256.png"
           }
           cardTitle={data.length > 0 ? data[currentIndex].title : "Title"}
           cardText={
             data.length > 0 ? data[currentIndex].description : "Description"
           }
-          // cardCTA={data.length > 0 ? data[currentIndex].client_url : "#"}
-          // cardCTAText={
-          //   data.length > 0
-          //     ? data[currentIndex].is_active
-          //       ? "Visit Site"
-          //       : "Coming Soon"
-          //     : "Coming Soon"
-          // }
+          cardCTA={data.length > 0 ? data[currentIndex].url : "#"}
+          cardCTAText={
+            data.length > 0
+              ? data[currentIndex].is_active
+                ? data[currentIndex].type === "design"
+                  ? "View on Figma"
+                  : "View on GitHub"
+                : "Coming Soon"
+              : "Coming Soon"
+          }
           isActive={data.length > 0 ? data[currentIndex].is_active : true}
         />
         <div className={styles["project-controls"]}>

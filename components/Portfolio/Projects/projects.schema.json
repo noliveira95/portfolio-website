@@ -2,15 +2,16 @@
   "elements": {
     "properties": {
       "client": { "type": "string" },
-      "client_logo": { "type": "string" },
-      "client_url": { "type": "string" },
+      "logo": { "type": "string" },
+      "url": { "type": "string" },
       "date_completed": { "type": "string" },
       "description": { "type": "string" },
       "featured_image": { "type": "string" },
       "id": { "type": "uint8" },
       "is_active": { "type": "boolean" },
       "skills_applied": { "elements": { "type": "string" } },
-      "title": { "type": "string" }
+      "title": { "type": "string" },
+      "type": { "type": "string" }
     }
   }
 }
