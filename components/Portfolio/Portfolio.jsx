@@ -38,11 +38,9 @@ function Portfolio() {
   };
 
   return (
-    <div id="clients">
+    <div id="projects">
       <section id={styles.portfolio}>
-        <h2 className={styles["portfolio-heading"]}>
-          Companies I&apos;ve Worked With
-        </h2>
+        <h2 className={styles["portfolio-heading"]}>Featured Projects</h2>
         <div className={styles["project-carousel"]}>
           <div className={styles["project-container"]}>
             <Projects

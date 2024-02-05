@@ -17,8 +17,8 @@ function CustomCard({
         <Image
           src={cardImage}
           alt="skill"
-          width={248}
-          height={120}
+          width={200}
+          height={100}
           className={styles["card-image"]}
         />
       </div>
@@ -28,7 +28,7 @@ function CustomCard({
         {cardCTA && (
           <div className={styles["card-cta"]}>
             <Button
-              isLinkButton={true}
+              isExternalLinkButton={true}
               btnLink={cardCTA}
               btnText={cardCTAText}
               className={styles["card-button"]}
