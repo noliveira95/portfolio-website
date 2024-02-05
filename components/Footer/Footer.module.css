@@ -15,7 +15,7 @@
 .footer-text {
   color: var(--color-base-black);
   text-decoration: none;
-  margin-left: 24px;
+  margin-left: 16px;
   text-align: start;
   align-items: center;
 }
@@ -28,9 +28,9 @@
   margin-top: 4px;
 }
 
-.footer-email {
+/* .footer-email {
   margin: 0 4px;
-}
+} */
 
 .social-icon {
   margin: 0 8px;
