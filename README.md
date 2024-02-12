@@ -17,4 +17,4 @@ This is the repository for my portfolio website. [Click here to see it live.](ht
 - React Hook Form
 
 # Copyright
-© 2023 Nicholas J. Oliveira. All rights reserved.
+© 2024 Nicholas J. Oliveira. All rights reserved.
