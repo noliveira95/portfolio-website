@@ -1,11 +1,10 @@
 #intro {
-  height: calc(100vh - 5rem);
   margin: 0 auto;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 480px;
+  padding: 240px 20px;
 }
 
 .intro-content {
@@ -32,6 +31,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  #intro {
+    padding: 140px 20px;
+  }
   .intro-name {
     font-size: 2rem;
   }

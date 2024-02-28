@@ -4,8 +4,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  height: 100vh;
-  min-height: 640px;
+  padding: 280px 20px 300px 20px;
 }
 
 .about-content {
@@ -30,6 +29,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  #about {
+    padding: 100px 20px 132px 20px;
+  }
   .about-content {
     flex-direction: column;
     align-items: center;
