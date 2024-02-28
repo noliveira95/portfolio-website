@@ -9,7 +9,7 @@ function Skills() {
   return (
     <div id="my-skills">
       <section id={styles.skills}>
-        <h2 className={styles["skills-title"]}>My Skills</h2>
+        <h2 className={styles["skills-heading"]}>My Skills</h2>
         <div className={styles["skills-container"]}>
           <SkillCard
             imageSrc={"/images/icons/code_development_icon.png"}
