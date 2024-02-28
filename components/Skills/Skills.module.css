@@ -14,8 +14,6 @@
 }
 
 .skills-container {
-  margin: 1.5rem;
-  width: 100vw;
   max-width: 50rem;
   display: flex;
   align-items: center;
@@ -51,6 +49,6 @@
   }
   .skill-section {
     width: 300px;
-    height: 400px;
+    height: 480px;
   }
 }
