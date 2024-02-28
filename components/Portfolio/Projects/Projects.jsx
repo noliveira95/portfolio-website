@@ -2,7 +2,6 @@
 
 import React from "react";
 import styles from "../Portfolio.module.css";
-import { motion, AnimatePresence } from "framer-motion";
 import CustomCard from "@/components/shared/Card/Card";
 import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 
