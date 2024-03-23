@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import { Work_Sans, DM_Sans } from "next/font/google";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 config.autoAddCss = false;
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${workSans.variable} ${dmSans.variable}`}>
       <body>
         {children}
+        <Analytics />
         <SpeedInsights />
       </body>
     </html>
