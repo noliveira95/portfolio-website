@@ -1,17 +1,19 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import styles from "./Navbar.module.css";
-import Image from "next/image";
-import Link from "next/link";
-import logo from "../../public/images/logos/NickOliveLogo3Cropped.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
-import Button from "../shared/Button/Button";
-import SocialButtonRow from "../shared/SocialButtonRow/SocialButtonRow";
+import React, { useState, useEffect } from 'react';
+import styles from './Navbar.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
+import logo from '../../public/images/logos/NickOliveLogo3Cropped.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
+import Button from '../shared/Button/Button';
+import SocialButtonRow from '../shared/SocialButtonRow/SocialButtonRow';
 
 function Navbar() {
   const [isActive, setIsActive] = useState(false);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
 
   const toggleActive = () => {
     setIsActive(!isActive);
@@ -20,23 +22,45 @@ function Navbar() {
   const removeActive = () => {
     setIsActive(false);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      let st = window.scrollY || document.documentElement.scrollTop;
+      if (st > lastScrollTop) {
+        setIsNavbarVisible(false);
+      } else {
+        setIsNavbarVisible(true);
+      }
+      setLastScrollTop(st <= 0 ? 0 : st);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollTop]);
+
   return (
     <>
-      <nav className={styles.navbar}>
+      <nav
+        className={`${styles.navbar} ${
+          isNavbarVisible ? styles['slide-in'] : styles['slide-out']
+        }`}
+      >
         <Link href="/">
           <Image src={logo} alt="Logo" className={styles.logo} />
         </Link>
         <div
-          className={`${styles["nav-links"]} ${isActive ? styles.active : ""}`}
+          className={`${styles['nav-links']} ${isActive ? styles.active : ''}`}
         >
-          <ul className={styles["nav-links-list"]}>
-            <li className={styles["nav-link"]} onClick={removeActive}>
+          <ul className={styles['nav-links-list']}>
+            <li className={styles['nav-link']} onClick={removeActive}>
               <Link href="/#who-am-i">Who Am I</Link>
             </li>
-            <li className={styles["nav-link"]} onClick={removeActive}>
+            <li className={styles['nav-link']} onClick={removeActive}>
               <Link href="/#my-skills">My Skills</Link>
             </li>
-            <li className={styles["nav-link"]} onClick={removeActive}>
+            <li className={styles['nav-link']} onClick={removeActive}>
               <Link href="/#projects">Projects</Link>
             </li>
             {/* <li className={styles["nav-link"]} onClick={removeActive}>
@@ -53,7 +77,7 @@ function Navbar() {
           <SocialButtonRow />
         </div>
         <div
-          className={`${styles.hamburger} ${isActive ? styles.active : ""}`}
+          className={`${styles.hamburger} ${isActive ? styles.active : ''}`}
           onClick={toggleActive}
         >
           {isActive ? (

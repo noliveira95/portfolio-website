@@ -6,10 +6,10 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 1rem 2rem;
-  /* position: sticky; */
-  top: 0;
   z-index: 3;
   background-color: var(--color-base-pewter);
+  position: fixed;
+  transition: top 0.2s ease-in-out;
 }
 
 .logo {
@@ -37,6 +37,14 @@
 
 .hamburger {
   display: none;
+}
+
+.slide-in {
+  top: 0;
+}
+
+.slide-out {
+  top: -5rem;
 }
 
 @media screen and (max-width: 780px) {
