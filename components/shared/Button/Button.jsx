@@ -34,11 +34,7 @@ function Button({
   }
   return (
     <>
-      <button
-        className={isActive ? styles.btn : `${styles.btn} ${styles.disabled}`}
-        type="button"
-        onClick={onClick}
-      >
+      <button className={buttonClass} type="button" onClick={onClick}>
         {btnIcon}
         {btnText}
       </button>
