@@ -24,7 +24,6 @@ function About() {
           </Link>
         </p>
         <Button
-          className={styles['about-button']}
           isLinkButton={true}
           btnText="View My Work"
           btnLink="/#portfolio"
