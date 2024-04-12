@@ -10,7 +10,8 @@ function Hero() {
           <h5 className={styles['intro-greeting']}>Hello, I&apos;m</h5>
           <h1 className={styles['intro-name']}>Nick Oliveira</h1>
           <h4 className={styles['intro-title']}>
-            Front-end Developer & UX/UI Designer
+            Front-end Developer
+            <br /> & UI/UX Designer
           </h4>
           <div className={styles['button-row']}>
             <Button
