@@ -18,7 +18,7 @@
 }
 
 html {
-  font-family: var(--font-work-sans), 'Roboto', sans-serif;
+  font-family: var(--font-cabin), 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -39,13 +39,13 @@ h3,
 h4,
 h5 {
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
 }
 
 h1 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 600;
   font-family: var(--font-work-sans);
 }
 
