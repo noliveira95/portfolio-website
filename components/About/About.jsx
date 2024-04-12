@@ -3,6 +3,7 @@ import styles from './About.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import MyPic from '../../public/images/AISelfieNoBg.png';
+import Button from '../shared/Button/Button';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -22,6 +23,12 @@ function About() {
             software development lifecycle.
           </Link>
         </p>
+        <Button
+          className={styles['about-button']}
+          isLinkButton={true}
+          btnText="View My Work"
+          btnLink="/#portfolio"
+        />
       </div>
       <div className={styles['about-image-container']}>
         <Image
