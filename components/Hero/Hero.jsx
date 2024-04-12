@@ -12,11 +12,19 @@ function Hero() {
           <h2 className={styles['intro-title']}>
             Front-end Developer & UX/UI Designer
           </h2>
-          <Button
-            isLinkButton={true}
-            btnText="Learn More"
-            btnLink={'/#who-am-i'}
-          />
+          <div className={styles['button-row']}>
+            <Button
+              isLinkButton={true}
+              btnText="Learn More"
+              btnLink={'/#who-am-i'}
+            />
+            <Button
+              isLinkButton={true}
+              btnText="Contact Me"
+              btnLink={'/#contact'}
+              buttonType="secondary"
+            />
+          </div>
         </div>
       </section>
     </>
