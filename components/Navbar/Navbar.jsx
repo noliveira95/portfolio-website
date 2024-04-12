@@ -55,10 +55,7 @@ function Navbar() {
         >
           <ul className={styles['nav-links-list']}>
             <li className={styles['nav-link']} onClick={removeActive}>
-              <Link href="/#who-am-i">Who Am I</Link>
-            </li>
-            <li className={styles['nav-link']} onClick={removeActive}>
-              <Link href="/#my-skills">My Skills</Link>
+              <Link href="/#who-am-i">About Me</Link>
             </li>
             <li className={styles['nav-link']} onClick={removeActive}>
               <Link href="/#projects">Projects</Link>
@@ -71,6 +68,7 @@ function Navbar() {
                 isLinkButton={true}
                 btnText="Contact Me"
                 btnLink="/#contact-me"
+                className={styles['cta-button']}
               />
             </li>
           </ul>

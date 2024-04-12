@@ -79,12 +79,12 @@ p span {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-neutral-light);
   transition: color 0.2s ease-out;
 }
 
 a:hover {
-  color: var(--color-base-black);
+  color: var(--color-accent);
 }
 
 @media screen and (max-width: 768px) {
