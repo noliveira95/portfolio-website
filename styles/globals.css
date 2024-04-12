@@ -1,11 +1,14 @@
 :root {
   /* Colors */
-  --color-base-white: #ffffff;
+  --color-primary: #1f1a38;
+  --color-secondary: #989fce;
+  --color-accent: #ffa62b;
+  --color-neutral-dark: #100d1e;
+  --color-neutral-light: #fffaf3;
   --color-base-black: #000000;
-  --color-base-pewter: #e9eaec;
-  --color-primary: #003190;
+  --color-base-white: #ffffff;
   --color-error: #dc143c;
-  --color-disabled: #909090;
+  --color-disabled: rgb(140, 140, 140, 0.5);
 }
 
 * {
@@ -20,13 +23,13 @@
 }
 
 body {
-  background-color: var(--color-base-pewter);
+  background-color: var(--color-secondary);
   overflow: hidden;
   overflow-y: scroll;
 }
 
 html {
-  font-family: var(--font-dm-sans), "Roboto", sans-serif;
+  font-family: var(--font-dm-sans), 'Roboto', sans-serif;
   scroll-behavior: smooth !important;
 }
 
