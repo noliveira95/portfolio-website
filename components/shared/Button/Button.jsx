@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./Button.module.css";
-import Link from "next/link";
+import React from 'react';
+import styles from './Button.module.css';
+import Link from 'next/link';
 
 function Button({
   btnText,
@@ -10,15 +10,15 @@ function Button({
   isLinkButton = false,
   isExternalLinkButton = false,
   isActive = true,
+  buttonType = 'primary',
 }) {
+  const buttonClass = `${styles.btn} ${styles[buttonType]} ${
+    isActive ? '' : styles.disabled
+  }`;
   if (isLinkButton) {
     return (
       <>
-        <Link
-          className={isActive ? styles.btn : `${styles.btn} ${styles.disabled}`}
-          type="button"
-          href={btnLink}
-        >
+        <Link className={buttonClass} type="button" href={btnLink}>
           {btnIcon}
           {btnText}
         </Link>
@@ -26,12 +26,7 @@ function Button({
     );
   } else if (isExternalLinkButton) {
     return (
-      <a
-        className={isActive ? styles.btn : `${styles.btn} ${styles.disabled}`}
-        type="button"
-        href={btnLink}
-        target="_blank"
-      >
+      <a className={buttonClass} type="button" href={btnLink} target="_blank">
         {btnIcon}
         {btnText}
       </a>
