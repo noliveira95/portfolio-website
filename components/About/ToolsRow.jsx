@@ -63,6 +63,7 @@ function ToolsRow() {
             className={styles['tool-image']}
             src={tool.image}
             alt={tool.name}
+            title={tool.name}
           />
         </div>
       ))}
