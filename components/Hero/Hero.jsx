@@ -1,25 +1,21 @@
-import React from "react";
-import styles from "./Hero.module.css";
-import Button from "../shared/Button/Button";
+import React from 'react';
+import styles from './Hero.module.css';
+import Button from '../shared/Button/Button';
 
 function Hero() {
   return (
     <>
       <section id={styles.intro}>
-        <div className={styles["intro-content"]}>
-          <h3 style={{ marginBottom: "0.5rem" }}>Hello, I&apos;m</h3>
-          <h1 style={{ marginBottom: "0.5rem" }}>
-            <span className={styles["intro-name"]}>Nicholas Oliveira</span>
-          </h1>
-          <h1>Front-end Developer & UX/UI Designer</h1>
-          <p className={styles["intro-paragraph"]}>
-            Creating outstanding digital experiences for users, businesses, and
-            beyond.
-          </p>
+        <div className={styles['intro-content']}>
+          <h3 className={styles['intro-greeting']}>Hello, I&apos;m</h3>
+          <h1 className={styles['intro-name']}>Nick Oliveira</h1>
+          <h2 className={styles['intro-title']}>
+            Front-end Developer & UX/UI Designer
+          </h2>
           <Button
             isLinkButton={true}
             btnText="Learn More"
-            btnLink={"/#who-am-i"}
+            btnLink={'/#who-am-i'}
           />
         </div>
       </section>
