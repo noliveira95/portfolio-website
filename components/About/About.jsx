@@ -2,14 +2,14 @@ import React from 'react';
 import styles from './About.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import MyPic from '../../public/images/SelfieGrayBG.jpg';
+import MyPic from '../../public/images/AISelfieNoBg.png';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 function About() {
   return (
     <section id="who-am-i" className={styles.about}>
-      <div className={styles['about-content']}>
+      <div className={styles['about-content-container']}>
         <h1>Who Am I?</h1>
         <p className={styles['about-paragraph']}>
           My name is Nicholas Oliveira. I&apos;m a front-end web developer and
@@ -23,8 +23,14 @@ function About() {
           </Link>
         </p>
       </div>
-      <div className={styles['about-image']}>
-        <Image src={MyPic} alt="Picture of Nicholas" width={200} height={200} />
+      <div className={styles['about-image-container']}>
+        <Image
+          className={styles['about-image']}
+          src={MyPic}
+          alt="Picture of Nicholas"
+          width={300}
+          height={300}
+        />
       </div>
     </section>
   );
