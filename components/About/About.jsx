@@ -41,7 +41,10 @@ function About() {
           />
         </div>
       </div>
-      <ToolsRow />
+      <div className={styles['tools-section']}>
+        <h3>Technologies I work with</h3>
+        <ToolsRow />
+      </div>
     </section>
   );
 }

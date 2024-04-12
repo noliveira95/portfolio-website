@@ -1,9 +1,11 @@
+/* About styles */
+
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 8rem;
   margin: 0 auto;
   padding: 280px 20px 300px 20px;
   background: linear-gradient(
@@ -33,16 +35,21 @@
   border-radius: 0 0 16px 16px;
 }
 
-/* .about-paragraph {
-  padding: 0 40px;
-} */
+.tools-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ToolsRow styles */
 
 .tools {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 1rem;
-  min-width: 60vw;
+  min-width: 55vw;
 }
 
 .tool-item {
