@@ -7,11 +7,11 @@ function Hero() {
     <>
       <section id={styles.intro}>
         <div className={styles['intro-content']}>
-          <h3 className={styles['intro-greeting']}>Hello, I&apos;m</h3>
+          <h5 className={styles['intro-greeting']}>Hello, I&apos;m</h5>
           <h1 className={styles['intro-name']}>Nick Oliveira</h1>
-          <h2 className={styles['intro-title']}>
+          <h4 className={styles['intro-title']}>
             Front-end Developer & UX/UI Designer
-          </h2>
+          </h4>
           <div className={styles['button-row']}>
             <Button
               isLinkButton={true}
