@@ -64,8 +64,12 @@ h5 {
   color: var(--color-secondary);
 }
 
-p {
+p,
+a {
   font-family: var(--font-dm-sans), 'Roboto', sans-serif;
+}
+
+p {
   max-width: 40rem;
 }
 
