@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #100d1e 88%, #1f1a38 100%);
+  background: var(--color-neutral-dark);
   height: 100vh;
 }
 
