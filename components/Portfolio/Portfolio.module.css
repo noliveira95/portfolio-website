@@ -9,7 +9,7 @@
 }
 
 .portfolio-heading {
-  color: var(--color-base-pewter);
+  margin-bottom: 4rem;
 }
 
 .project-container {
@@ -24,11 +24,27 @@
   /* margin: 0 20px; */
 }
 
+.current-project {
+  display: flex;
+  gap: 5rem;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  margin: 20px 0;
+  max-width: 40ch;
+}
+
 .project-controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 600px;
+  margin-top: 40px;
 }
 
 .project-image {
@@ -37,6 +53,8 @@
   margin: auto;
   overflow: hidden;
   object-fit: cover;
+  width: 600px;
+  height: 400px;
 }
 
 .client-logo-wrapper {
@@ -51,26 +69,24 @@
   object-fit: contain;
 }
 
-.left {
-  margin-right: 28px;
+.left,
+.right {
   background-color: var(--color-primary);
-  color: var(--color-base-pewter);
+  color: var(--color-secondary);
   border: none;
 }
 
-.left:hover {
+.left {
+  margin-right: 28px;
+}
+
+.left:hover,
+.right:hover {
   cursor: pointer;
 }
 
 .right {
   margin-left: 28px;
-  background-color: var(--color-primary);
-  color: var(--color-base-pewter);
-  border: none;
-}
-
-.right:hover {
-  cursor: pointer;
 }
 
 .project-title {
@@ -94,12 +110,13 @@
   background-color: var(--color-primary);
   width: 15px;
   height: 15px;
-  border: 2px solid var(--color-base-pewter);
+  border: 2px solid var(--color-secondary);
   border-radius: 50%;
+  transition: background-color 0.2s ease-in;
 }
 
 .active {
-  background-color: var(--color-base-pewter);
+  background-color: var(--color-secondary);
 }
 
 @media screen and (max-width: 768px) {

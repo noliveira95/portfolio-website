@@ -1,9 +1,10 @@
-"use client";
+'use client';
 
-import React from "react";
-import styles from "../Portfolio.module.css";
-import CustomCard from "@/components/shared/Card/Card";
-import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
+import React from 'react';
+import styles from '../Portfolio.module.css';
+import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons';
+import Image from 'next/image';
+import Button from '@/components/shared/Button/Button';
 
 function Projects({
   currentIndex,
@@ -15,26 +16,40 @@ function Projects({
   const isValid =
     data.length > 0 && currentIndex >= 0 && currentIndex < data.length;
 
+  const currentProject = data[currentIndex];
+
+  if (!isValid) {
+    // TODO: Add UI if there are no projects
+    return null;
+  }
+
   return (
     <>
-      <div className={styles["project-items"]}>
-        <CustomCard
-          cardImage={isValid ? data[currentIndex].logo : "/Olive256x256.png"}
-          cardTitle={isValid ? data[currentIndex].title : "Title"}
-          cardText={isValid ? data[currentIndex].description : "Description"}
-          cardCTA={isValid ? data[currentIndex].url : "#"}
-          cardCTAText={
-            isValid
-              ? data[currentIndex].is_active
-                ? data[currentIndex].type === "design"
-                  ? "View on Figma"
-                  : "View on GitHub"
-                : "Coming Soon"
-              : "Coming Soon"
-          }
-          isActive={isValid ? data[currentIndex].is_active : true}
-        />
-        <div className={styles["project-controls"]}>
+      <div className={styles['project-items']}>
+        <div className={styles['current-project']}>
+          <div className={styles['project-image-container']}>
+            <Image
+              width={480}
+              height={320}
+              src={currentProject.featured_image}
+              alt={currentProject.title}
+            />
+          </div>
+          <div className={styles['project-info']}>
+            <h2 className={styles['project-title']}>{currentProject.title}</h2>
+            <p>{currentProject.description}</p>
+            <Button
+              isExternalLinkButton={true}
+              btnLink={currentProject.url}
+              btnText={
+                currentProject.type === 'dev'
+                  ? 'View on Github'
+                  : 'View on Figma'
+              }
+            />
+          </div>
+        </div>
+        <div className={styles['project-controls']}>
           <button className={styles.left} onClick={handlePrevious}>
             <ChevronLeftIcon width={50} height={80} />
           </button>
@@ -43,7 +58,7 @@ function Projects({
               <div
                 key={index}
                 className={`${styles.dot} ${
-                  index === currentIndex ? styles.active : ""
+                  index === currentIndex ? styles.active : ''
                 }`}
                 onClick={() => handleDotClick(index)}
               ></div>

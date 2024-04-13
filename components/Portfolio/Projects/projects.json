@@ -1,6 +1,26 @@
 [
   {
     "id": 1,
+    "title": "Aurelius",
+    "description": "A Chrome extension that generates quotes from ancient Stoic philosophers. Built with React and TypeScript.",
+    "client": "NA",
+    "logo": "/images/logos/CommentMe.png",
+    "url": "https://github.com/noliveira95/aurelius",
+    "date_completed": "On-going",
+    "skills_applied": [
+      "Web App Design",
+      "UX/UI",
+      "Web App",
+      "Product Design",
+      "Design System",
+      "Figma"
+    ],
+    "featured_image": "/images/projects/Aurelius.png",
+    "is_active": true,
+    "type": "dev"
+  },
+  {
+    "id": 2,
     "title": "Locart",
     "description": "Mobile design concept for an app that helps people find and support local musicians.",
     "client": "NA",
@@ -15,12 +35,12 @@
       "Design System",
       "Figma"
     ],
-    "featured_image": "NA",
+    "featured_image": "/images/projects/Aurelius.png",
     "is_active": true,
     "type": "design"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "CommentMe!",
     "description": "Design concept for a Chrome extension that streamlines the feedback process for web developers.",
     "client": "NA",
@@ -35,7 +55,7 @@
       "Design System",
       "Figma"
     ],
-    "featured_image": "NA",
+    "featured_image": "/images/projects/Aurelius.png",
     "is_active": true,
     "type": "design"
   }
