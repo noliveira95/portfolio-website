@@ -35,18 +35,34 @@ function Projects({
               alt={currentProject.title}
             />
           </div>
-          <div className={styles['project-info']}>
+          <div className={styles['project-info-container']}>
             <h2 className={styles['project-title']}>{currentProject.title}</h2>
-            <p>{currentProject.description}</p>
-            <Button
-              isExternalLinkButton={true}
-              btnLink={currentProject.url}
-              btnText={
-                currentProject.projectType === 'dev'
-                  ? 'View on Github'
-                  : 'View on Figma'
-              }
-            />
+            <p className={styles['project-info']}>
+              {currentProject.description}
+            </p>
+            <div className={styles['project-buttons']}>
+              <Button
+                isExternalLinkButton={true}
+                btnLink={currentProject.url}
+                btnText={
+                  currentProject.projectType === 'dev'
+                    ? 'View on Github'
+                    : 'View on Figma'
+                }
+              />
+              {currentProject.url2 && (
+                <Button
+                  isExternalLinkButton={true}
+                  btnLink={currentProject.url2}
+                  btnText={
+                    currentProject.projectType === 'dev'
+                      ? 'View Live'
+                      : 'View Case Study'
+                  }
+                  btnType="secondary"
+                />
+              )}
+            </div>
           </div>
         </div>
         <div className={styles['project-controls']}>

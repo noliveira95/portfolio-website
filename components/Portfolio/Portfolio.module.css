@@ -1,4 +1,4 @@
-#portfolio {
+.portfolio {
   background-color: var(--color-primary);
   padding: 60px 0;
   display: flex;
@@ -13,15 +13,16 @@
 }
 
 .project-container {
-  width: 800px;
+  width: 60vw;
 }
+
+/* Projects styles */
 
 .project-items {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin: 0 20px; */
 }
 
 .current-project {
@@ -29,14 +30,28 @@
   gap: 5rem;
 }
 
-.project-info {
+.project-info-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   text-align: left;
   margin: 20px 0;
+}
+
+.project-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.project-info {
   max-width: 40ch;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .project-controls {
@@ -45,28 +60,6 @@
   align-items: center;
   width: 600px;
   margin-top: 40px;
-}
-
-.project-image {
-  position: relative;
-  border-radius: 10px;
-  margin: auto;
-  overflow: hidden;
-  object-fit: cover;
-  width: 600px;
-  height: 400px;
-}
-
-.client-logo-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 240px;
-  height: 240px;
-}
-
-.client-logo {
-  object-fit: contain;
 }
 
 .left,
@@ -87,11 +80,6 @@
 
 .right {
   margin-left: 28px;
-}
-
-.project-title {
-  text-align: center;
-  margin-top: 20px;
 }
 
 .project-description {
