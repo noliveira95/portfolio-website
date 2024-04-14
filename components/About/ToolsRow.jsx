@@ -14,6 +14,7 @@ function ToolsRow() {
             alt={tool.name}
             title={tool.name}
           />
+          <p className={styles['tool-name']}>{tool.name}</p>
         </div>
       ))}
     </div>
