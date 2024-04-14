@@ -6,13 +6,13 @@ function Button({
   btnText,
   btnIcon,
   btnLink,
+  btnType = 'primary',
   onClick,
   isLinkButton = false,
   isExternalLinkButton = false,
   isActive = true,
-  buttonType = 'primary',
 }) {
-  const buttonClass = `${styles.btn} ${styles[buttonType]} ${
+  const buttonClass = `${styles.btn} ${styles[btnType]} ${
     isActive ? '' : styles.disabled
   }`;
   if (isLinkButton) {

@@ -23,7 +23,7 @@ function Hero() {
               isLinkButton={true}
               btnText="Contact Me"
               btnLink={'/#contact'}
-              buttonType="secondary"
+              btnType="secondary"
             />
           </div>
         </div>
