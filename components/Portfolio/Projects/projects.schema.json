@@ -1,17 +1,18 @@
 {
   "elements": {
     "properties": {
-      "client": { "type": "string" },
-      "logo": { "type": "string" },
-      "url": { "type": "string" },
-      "date_completed": { "type": "string" },
-      "description": { "type": "string" },
-      "featured_image": { "type": "string" },
       "id": { "type": "uint8" },
-      "is_active": { "type": "boolean" },
-      "skills_applied": { "elements": { "type": "string" } },
       "title": { "type": "string" },
-      "type": { "type": "string" }
+      "description": { "type": "string" },
+      "featuredImage": { "type": "string" },
+      "isActive": { "type": "boolean" },
+      "skillsApplied": { "elements": { "type": "string" } },
+      "projectType": { "enum": ["dev", "design"] },
+      "url": { "type": "string" },
+      "url2": { "type": "string", "nullable": true },
+      "client": { "type": "string", "nullable": true },
+      "logo": { "type": "string", "nullable": true },
+      "dateCompleted": { "type": "string", "nullable": true }
     }
   }
 }

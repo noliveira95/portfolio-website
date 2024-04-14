@@ -31,7 +31,7 @@ function Projects({
             <Image
               width={480}
               height={320}
-              src={currentProject.featured_image}
+              src={currentProject.featuredImage}
               alt={currentProject.title}
             />
           </div>
@@ -42,7 +42,7 @@ function Projects({
               isExternalLinkButton={true}
               btnLink={currentProject.url}
               btnText={
-                currentProject.type === 'dev'
+                currentProject.projectType === 'dev'
                   ? 'View on Github'
                   : 'View on Figma'
               }
