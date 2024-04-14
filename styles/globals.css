@@ -9,6 +9,7 @@
   --color-base-white: #ffffff;
   --color-error: #dc143c;
   --color-disabled: rgb(140, 140, 140, 0.5);
+  --color-disabled-text: rgb(140, 140, 140, 0.8);
 }
 
 * {
