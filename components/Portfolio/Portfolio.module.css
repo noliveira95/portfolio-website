@@ -30,6 +30,26 @@
   gap: 5rem;
 }
 
+.project-image-container {
+  width: 500px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.project-image {
+  object-fit: cover;
+  opacity: 0.7;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: opacity 0.2s ease-in;
+}
+
+.project-image:hover {
+  opacity: 1;
+}
+
 .project-info-container {
   display: flex;
   flex-direction: column;

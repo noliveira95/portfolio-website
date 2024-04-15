@@ -29,10 +29,10 @@ function Projects({
         <div className={styles['current-project']}>
           <div className={styles['project-image-container']}>
             <Image
-              width={480}
-              height={320}
+              className={styles['project-image']}
               src={currentProject.featuredImage}
               alt={currentProject.title}
+              fill
             />
           </div>
           <div className={styles['project-info-container']}>
