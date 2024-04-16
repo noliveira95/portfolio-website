@@ -18,7 +18,7 @@ function Footer() {
             <FontAwesomeIcon
               className={styles['email-icon']}
               icon={faEnvelope}
-              size="s"
+              size="lg"
             />
             contact@nickolive.com
           </a>
