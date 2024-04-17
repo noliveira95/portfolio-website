@@ -50,6 +50,13 @@
   .footer-content {
     flex-direction: column;
   }
+
+  .footer-text-container {
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+
   .footer-text {
     margin: 8px 0;
     text-align: center;
