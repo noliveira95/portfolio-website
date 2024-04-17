@@ -36,8 +36,7 @@ function About() {
             className={styles['about-image']}
             src={MyPic}
             alt="Picture of Nicholas"
-            width={300}
-            height={300}
+            fill
           />
         </div>
       </div>

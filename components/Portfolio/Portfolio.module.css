@@ -31,7 +31,7 @@
 }
 
 .project-image-container {
-  width: 500px;
+  min-width: 500px;
   height: 360px;
   display: flex;
   justify-content: center;
@@ -44,6 +44,7 @@
   border: 1px solid transparent;
   border-radius: 8px;
   transition: opacity 0.2s ease-in;
+  width: 500px;
 }
 
 .project-image:hover {
@@ -127,27 +128,49 @@
   background-color: var(--color-secondary);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   #portfolio {
     padding: 80px 0;
   }
+
+  .current-project {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .project-info-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-controls {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .project-container {
     width: 300px;
   }
+
   .project-items {
     width: 300px;
   }
+
   .project-controls {
     width: 300px;
   }
+
   .project-image {
     width: 300px;
     height: 300px;
   }
+
   .client-logo-wrapper {
     width: 120px;
     height: 120px;
   }
+
   .client-logo {
     width: 120px;
     height: 120px;
