@@ -37,9 +37,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  #intro {
-    padding: 200px 20px 140px 20px;
-  }
   .intro-greeting {
     font-size: var(--fs-hd-rg);
   }

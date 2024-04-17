@@ -74,6 +74,10 @@ body {
   overflow-y: scroll;
 }
 
+section {
+  padding: 200px 20px;
+}
+
 h1,
 h2,
 h3,
@@ -124,6 +128,10 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  section {
+    padding: 160px 16px;
+  }
+
   h1,
   h2,
   h3,
