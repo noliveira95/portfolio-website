@@ -125,3 +125,9 @@
     margin-top: 20px;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .tools {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
