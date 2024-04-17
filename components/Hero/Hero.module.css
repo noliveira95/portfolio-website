@@ -18,15 +18,15 @@
 }
 
 .intro-greeting {
-  font-size: 2rem;
+  font-size: var(--fs-hd-lg);
 }
 
 .intro-name {
-  font-size: 5rem;
+  font-size: var(--fs-hd-xxl);
 }
 
 .intro-title {
-  font-size: 3rem;
+  font-size: var(--fs-hd-xl);
 }
 
 .button-row {
@@ -41,12 +41,12 @@
     padding: 200px 20px 140px 20px;
   }
   .intro-greeting {
-    font-size: 1.5rem;
+    font-size: var(--fs-hd-rg);
   }
   .intro-name {
-    font-size: 3rem;
+    font-size: var(--fs-hd-xl);
   }
   .intro-title {
-    font-size: 2rem;
+    font-size: var(--fs-hd-lg);
   }
 }
