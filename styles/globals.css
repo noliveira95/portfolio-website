@@ -44,11 +44,19 @@
   /* END FONTS */
 }
 
+/* RESETS */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+img {
+  display: block;
+}
+
+/* END RESETS */
 
 html {
   font-family: var(--ff-primary);
