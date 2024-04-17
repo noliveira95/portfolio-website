@@ -1,5 +1,6 @@
 :root {
-  /* Colors */
+  /* COLORS */
+
   --color-primary: #1f1a38;
   --color-secondary: #989fce;
   --color-accent: #ffa62b;
@@ -10,6 +11,37 @@
   --color-error: #dc143c;
   --color-disabled: rgb(140, 140, 140, 0.5);
   --color-disabled-text: rgb(140, 140, 140, 0.8);
+
+  /* END COLORS */
+
+  /* FONTS */
+
+  /* FAMILIES */
+  --ff-primary: var(--font-cabin), 'Roboto', sans-serif;
+  --ff-secondary: var(--font-dm-sans), 'Roboto', sans-serif;
+
+  /* SIZES */
+  --fs-sm: 0.75rem;
+  --fs-rg: 1rem;
+  --fs-lg: 1.5rem;
+  --fs-xl: 2rem;
+  /* Headings */
+  --fs-hd-sm: 1.25rem;
+  --fs-hd-rg: 1.5rem;
+  --fs-hd-lg: 2rem;
+  --fs-hd-xl: 3rem;
+  --fs-hd-xxl: 5rem;
+
+  /* WEIGHTS */
+  --fw-lt: 300;
+  --fw-rg: 400;
+  --fw-sb: 600;
+  --fw-b: 700;
+
+  /* LINE HEIGHT */
+  --lh-default: 1.5;
+
+  /* END FONTS */
 }
 
 * {
@@ -19,10 +51,10 @@
 }
 
 html {
-  font-family: var(--font-cabin), 'Roboto', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-rg);
+  font-weight: var(--fw-rg);
+  line-height: var(--lh-default);
   text-decoration: none;
   color: var(--color-neutral-light);
   scroll-behavior: smooth !important;
@@ -40,24 +72,23 @@ h3,
 h4,
 h5 {
   margin-bottom: 1rem;
-  font-weight: 400;
+  font-weight: var(--fw-rg);
   line-height: 1.2;
 }
 
 h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  font-family: var(--font-work-sans);
+  font-size: var(--fs-hd-xl);
+  font-weight: var(--fw-sb);
 }
 
 h2,
 h4 {
-  font-size: 2rem;
+  font-size: var(--fs-hd-lg);
 }
 
 h3,
 h5 {
-  font-size: 1.5rem;
+  font-size: var(--fs-hd-rg);
 }
 
 h4,
@@ -67,7 +98,7 @@ h5 {
 
 p,
 a {
-  font-family: var(--font-dm-sans), 'Roboto', sans-serif;
+  font-family: var(--ff-secondary);
 }
 
 p {
@@ -94,25 +125,22 @@ a:hover {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: var(--fs-hd-lg);
   }
 
   h2,
   h4 {
-    font-size: 1.5rem;
+    font-size: var(--fs-hd-rg);
   }
 
   h3,
   h5 {
-    font-size: 1.25rem;
+    font-size: var(--fs-hd-sm);
   }
 
-  p {
-    font-size: 1rem;
-    max-width: 24rem;
-  }
-
+  p,
   p a {
-    font-size: 1rem;
+    font-size: var(--fs-rg);
+    max-width: 24rem;
   }
 }
