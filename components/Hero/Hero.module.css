@@ -1,5 +1,4 @@
 #intro {
-  margin: 0 auto;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -36,6 +35,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  #intro {
+    padding: 280px 16px;
+  }
   .intro-greeting {
     font-size: var(--fs-hd-rg);
   }
@@ -44,5 +46,11 @@
   }
   .intro-title {
     font-size: var(--fs-hd-lg);
+  }
+}
+
+@media screen and (max-width: 768px) and (max-height: 740px) {
+  #intro {
+    padding: 200px 16px;
   }
 }
