@@ -27,8 +27,8 @@ function About() {
           </p>
           <Button
             isLinkButton={true}
-            btnText="View My Work"
-            btnLink="/#portfolio"
+            btnText="See My Work"
+            btnLink="/#projects"
           />
         </div>
         <div className={styles['about-image-container']}>
