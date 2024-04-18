@@ -111,10 +111,11 @@ h5 {
 p,
 a {
   font-family: var(--ff-secondary);
+  max-width: 40ch;
 }
 
-p {
-  max-width: 40rem;
+p a {
+  text-decoration: underline;
 }
 
 a {
