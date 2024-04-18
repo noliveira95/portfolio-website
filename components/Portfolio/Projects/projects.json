@@ -1,6 +1,27 @@
 [
   {
     "id": 1,
+    "title": "Locart",
+    "description": "Mobile design concept for an app that helps people find and support local musicians.",
+    "client": null,
+    "logo": "/images/logos/Locart.png",
+    "url": "https://www.figma.com/file/Moxf5Ael1dDkIfu9mYtjox/Locart?type=design&node-id=389%3A187&mode=design&t=cLf0I6ga9R1hMoPA-1",
+    "url2": "https://www.behance.net/gallery/192525569/Locart-A-UX-Case-Study",
+    "dateCompleted": null,
+    "skillsApplied": [
+      "Mobile App Design",
+      "UX/UI",
+      "User Research",
+      "Product Design",
+      "Design System",
+      "Figma"
+    ],
+    "featuredImage": "/images/projects/Locart.png",
+    "isActive": true,
+    "projectType": "design"
+  },
+  {
+    "id": 2,
     "title": "Aurelius",
     "description": "A Chrome extension that generates quotes from ancient Stoic philosophers. Built with React and TypeScript.",
     "client": null,
@@ -20,27 +41,6 @@
     "featuredImage": "/images/projects/Aurelius.png",
     "isActive": true,
     "projectType": "dev"
-  },
-  {
-    "id": 2,
-    "title": "Locart",
-    "description": "Mobile design concept for an app that helps people find and support local musicians.",
-    "client": null,
-    "logo": "/images/logos/Locart.png",
-    "url": "https://www.figma.com/file/Moxf5Ael1dDkIfu9mYtjox/Locart?type=design&node-id=389%3A187&mode=design&t=cLf0I6ga9R1hMoPA-1",
-    "url2": "https://www.behance.net/gallery/192525569/Locart-A-UX-Case-Study",
-    "dateCompleted": null,
-    "skillsApplied": [
-      "Mobile App Design",
-      "UX/UI",
-      "User Research",
-      "Product Design",
-      "Design System",
-      "Figma"
-    ],
-    "featuredImage": "/images/projects/Locart.png",
-    "isActive": true,
-    "projectType": "design"
   },
   {
     "id": 3,
