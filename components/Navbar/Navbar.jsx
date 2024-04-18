@@ -60,17 +60,17 @@ function Navbar() {
             <li className={styles['nav-link']} onClick={removeActive}>
               <Link href="/#projects">Projects</Link>
             </li>
-            {/* <li className={styles["nav-link"]} onClick={removeActive}>
-              <Link href="/#testimonials">Testimonials</Link>
-            </li> */}
-            <li onClick={removeActive}>
+            <li className={styles['nav-link']} onClick={removeActive}>
+              <Link href="/#contact">Contact</Link>
+            </li>
+            {/* <li onClick={removeActive}>
               <Button
                 isLinkButton={true}
                 btnText="Contact Me"
                 btnLink="/#contact"
                 className={styles['cta-button']}
               />
-            </li>
+            </li> */}
           </ul>
           <SocialButtonRow />
         </div>
