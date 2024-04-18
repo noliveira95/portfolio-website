@@ -55,6 +55,7 @@
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   place-content: center;
+  gap: 32px;
   margin-top: 1rem;
   max-width: 60vw;
 }
@@ -64,15 +65,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0 8px;
-  width: 100px;
   height: 160px;
-}
-
-.tool-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .tool-image {
@@ -111,6 +104,10 @@
 
   .tools {
     grid-template-columns: repeat(5, 1fr);
+  }
+
+  .tool-item {
+    height: 140px;
   }
 }
 

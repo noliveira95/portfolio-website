@@ -10,6 +10,8 @@ function ToolsRow() {
         <div key={index} className={styles['tool-item']}>
           <Image
             className={styles['tool-image']}
+            width={80}
+            height={80}
             src={tool.image}
             alt={tool.name}
             title={tool.name}
