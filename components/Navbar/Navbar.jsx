@@ -67,7 +67,7 @@ function Navbar() {
               <Button
                 isLinkButton={true}
                 btnText="Contact Me"
-                btnLink="/#contact-me"
+                btnLink="/#contact"
                 className={styles['cta-button']}
               />
             </li>

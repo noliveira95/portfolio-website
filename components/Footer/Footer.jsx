@@ -6,7 +6,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 function Footer() {
   return (
-    <footer id="footer" className={styles.footer}>
+    <footer id="contact" className={styles.footer}>
       <div className={styles['footer-content']}>
         <div className={styles['footer-text-container']}>
           <a
