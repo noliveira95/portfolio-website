@@ -10,7 +10,7 @@ import ToolsRow from './ToolsRow';
 
 function About() {
   return (
-    <section id="who-am-i" className={styles.about}>
+    <section id="about-me" className={styles.about}>
       <div className={styles['about-me-content']}>
         <div className={styles['about-content-container']}>
           <h1>Who Am I?</h1>

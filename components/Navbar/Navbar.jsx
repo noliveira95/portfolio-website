@@ -55,7 +55,7 @@ function Navbar() {
         >
           <ul className={styles['nav-links-list']}>
             <li className={styles['nav-link']} onClick={removeActive}>
-              <Link href="/#who-am-i">About Me</Link>
+              <Link href="/#about-me">About Me</Link>
             </li>
             <li className={styles['nav-link']} onClick={removeActive}>
               <Link href="/#projects">Projects</Link>
