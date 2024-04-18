@@ -9,6 +9,8 @@
   background-color: var(--color-base-pewter);
   position: fixed;
   transition: top 0.2s ease-in-out;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .logo {
