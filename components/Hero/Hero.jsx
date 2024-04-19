@@ -17,7 +17,7 @@ function Hero() {
             <Button
               isLinkButton={true}
               btnText="Learn More"
-              btnLink={'/#who-am-i'}
+              btnLink={'/#about-me'}
             />
             <Button
               isLinkButton={true}
