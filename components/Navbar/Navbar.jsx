@@ -4,10 +4,9 @@ import React, { useState, useEffect } from 'react';
 import styles from './Navbar.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '../../public/images/logos/NickOliveLogo3Cropped.png';
+import logo from '../../public/images/logos/NLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
-import Button from '../shared/Button/Button';
 import SocialButtonRow from '../shared/SocialButtonRow/SocialButtonRow';
 
 function Navbar() {
