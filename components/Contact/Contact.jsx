@@ -13,7 +13,7 @@ function Contact() {
           click here to send me an email.
         </a>
       </p>
-      <div className={styles['contact-form-wrapper']}>
+      <div className={styles['contact-form-container']}>
         <ContactForm />
       </div>
     </section>

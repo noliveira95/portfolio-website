@@ -84,7 +84,7 @@ function ContactForm() {
         </span>
       )}
       <input
-        className={styles['contact-form-field']}
+        className={styles['contact-input-field']}
         type="text"
         placeholder="Name"
         name="user_name"
@@ -94,7 +94,7 @@ function ContactForm() {
         })}
       />
       <input
-        className={styles['contact-form-field']}
+        className={styles['contact-input-field']}
         type="text"
         placeholder="Email"
         name="user_email"
@@ -104,7 +104,7 @@ function ContactForm() {
         })}
       />
       <textarea
-        className={styles['contact-form-field']}
+        className={styles['contact-message-field']}
         type="text"
         placeholder="Additional Information"
         name="message"
