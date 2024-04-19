@@ -9,7 +9,7 @@ import DialogPopup from '../shared/Dialog/Dialog';
 import { ThreeDots } from 'react-loader-spinner';
 
 function ContactForm() {
-  const [dialogIsOpen, setDialogIsOpen] = useState(false);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
   const form = useRef();
@@ -29,13 +29,13 @@ function ContactForm() {
   });
 
   const openDialog = () => {
-    setDialogIsOpen(true);
+    setIsDialogOpen(true);
   };
 
   const closeDialog = () => {
     reset();
     recaptchaRef.current.reset();
-    setDialogIsOpen(false);
+    setIsDialogOpen(false);
     setIsButtonDisabled(true);
   };
 
@@ -138,7 +138,7 @@ function ContactForm() {
         title="Message Sent!"
         description="Thank you for your inquiry, I'll get back to you as soon as possible."
         buttonText="Finish"
-        isOpen={dialogIsOpen}
+        isOpen={isDialogOpen}
         closeDialog={closeDialog}
       />
     </form>
