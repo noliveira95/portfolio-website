@@ -1,3 +1,5 @@
+/* Portfolio styles */
+
 .portfolio {
   background-color: var(--color-primary);
   display: flex;
@@ -128,6 +130,7 @@
 }
 
 @media screen and (max-width: 1200px) {
+  /* Projects styles */
   .current-project {
     flex-direction: column;
     gap: 1.25rem;
@@ -144,6 +147,7 @@
 }
 
 @media screen and (max-width: 768px) {
+  /* Portfolio styles */
   .portfolio {
     padding: 40px 0;
   }
@@ -152,6 +156,7 @@
     width: 300px;
   }
 
+  /* Projects styles */
   .project-items {
     width: 300px;
   }
@@ -171,6 +176,7 @@
 }
 
 @media screen and (max-width: 576px) {
+  /* Projects styles */
   .current-project {
     gap: 0.5rem;
   }

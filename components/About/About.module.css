@@ -82,6 +82,7 @@
 }
 
 @media screen and (max-width: 1200px) {
+  /* About styles */
   .about {
     padding-top: 240px;
     scroll-margin-top: -160px;
@@ -102,6 +103,7 @@
     height: 240px;
   }
 
+  /* ToolsRow styles */
   .tools {
     grid-template-columns: repeat(5, 1fr);
   }
@@ -112,6 +114,7 @@
 }
 
 @media screen and (max-width: 768px) {
+  /* About styles */
   .about-content {
     flex-direction: column;
     align-items: center;
@@ -125,6 +128,7 @@
 }
 
 @media screen and (max-width: 576px) {
+  /* ToolsRow styles */
   .tools {
     grid-template-columns: repeat(2, 1fr);
   }
