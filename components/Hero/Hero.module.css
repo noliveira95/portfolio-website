@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   background: var(--color-neutral-dark);
+  padding: 280px 20px;
 }
 
 .intro-content {
@@ -36,7 +37,7 @@
 
 @media screen and (max-width: 768px) {
   #intro {
-    padding: 280px 16px;
+    padding: 300px 16px;
   }
   .intro-greeting {
     font-size: var(--fs-hd-rg);
