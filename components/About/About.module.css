@@ -7,11 +7,6 @@
   align-items: center;
   justify-content: center;
   gap: 8rem;
-  background: linear-gradient(
-    180deg,
-    var(--color-neutral-dark) 0%,
-    var(--color-primary) 10.26%
-  );
   scroll-margin-top: -88px;
 }
 

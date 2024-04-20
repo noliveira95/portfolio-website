@@ -11,6 +11,7 @@
   --color-error: #dc143c;
   --color-disabled: rgb(140, 140, 140, 0.5);
   --color-disabled-text: rgb(140, 140, 140, 0.8);
+  --color-bg: radial-gradient(50% 50% at 50% 50%, #1f1a38 0%, #100d1e 100%);
 
   /* END COLORS */
 
@@ -69,13 +70,21 @@ html {
 }
 
 body {
-  background-color: var(--color-neutral-dark);
+  background: radial-gradient(50% 50% at 50% 50%, #1f1a38 0%, #100d1e 100%);
   overflow: hidden;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 section {
-  padding: 240px 20px;
+  margin: 20rem auto;
+}
+
+footer {
+  width: 100%;
 }
 
 h1,

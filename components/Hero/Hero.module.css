@@ -3,8 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--color-neutral-dark);
-  padding: 280px 20px;
 }
 
 .intro-content {
