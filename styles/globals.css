@@ -70,7 +70,7 @@ html {
 }
 
 body {
-  background: radial-gradient(50% 50% at 50% 50%, #1f1a38 0%, #100d1e 100%);
+  background: var(--color-bg);
   overflow: hidden;
   overflow-y: scroll;
   display: flex;
@@ -80,7 +80,7 @@ body {
 }
 
 section {
-  margin: 20rem auto;
+  margin: 12rem auto;
 }
 
 footer {
@@ -139,7 +139,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   section {
-    padding: 200px 16px;
+    margin: 15rem auto;
   }
 
   h1,
