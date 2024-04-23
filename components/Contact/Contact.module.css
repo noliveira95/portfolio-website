@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  scroll-margin-top: 120px;
+  scroll-margin-top: 16vh;
 }
 
 .contact p {
@@ -14,7 +14,6 @@
 }
 
 .contact-form-container {
-  /* padding: 20px 0; */
   width: 30rem;
 }
 
@@ -93,9 +92,9 @@
   }
 }
 
-@media screen and (max-width: 576px) and (max-height: 740px) {
-  /* Contact styles */
-  .contact {
-    scroll-margin-top: -120px;
-  }
-}
+/* @media screen and (max-width: 576px) and (max-height: 740px) { */
+/* Contact styles */
+/* .contact { */
+/* scroll-margin-top: -120px; */
+/* } */
+/* } */

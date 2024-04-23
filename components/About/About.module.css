@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   gap: 6rem;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 12vh;
 }
 
 .about-me-content {
@@ -78,7 +78,7 @@
 @media screen and (max-width: 1200px) {
   /* About styles */
   .about {
-    scroll-margin-top: -160px;
+    scroll-margin-top: 10vh;
   }
 
   .about-me-content {
