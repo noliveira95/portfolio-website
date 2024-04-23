@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  scroll-margin-top: -60px;
+  scroll-margin-top: 100px;
 }
 
 .portfolio-heading {
