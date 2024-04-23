@@ -5,8 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8rem;
-  /* TODO: Adjust scroll margin top for sections */
+  gap: 6rem;
   scroll-margin-top: 100px;
 }
 
@@ -51,7 +50,7 @@
   grid-template-columns: repeat(10, 1fr);
   place-content: center;
   gap: 32px;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   max-width: 60vw;
 }
 
@@ -68,7 +67,7 @@
 }
 
 .tool-name {
-  color: var(--color-primary);
+  color: transparent;
   font-weight: var(--fw-b);
 }
 
