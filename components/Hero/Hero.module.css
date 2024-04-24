@@ -3,8 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100dvh;
-  margin: 0 auto;
 }
 
 .intro-content {
@@ -44,5 +42,17 @@
   }
   .intro-title {
     font-size: var(--fs-hd-lg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+  #intro {
+    margin: 20rem auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #intro {
+    margin: 16rem auto;
   }
 }
