@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  padding: 12rem 0;
 }
 
 .intro-content {
@@ -47,12 +49,12 @@
 
 @media screen and (min-width: 768px) and (min-height: 1024px) {
   #intro {
-    margin: 20rem auto;
+    padding: 20rem 0;
   }
 }
 
 @media screen and (max-width: 576px) {
   #intro {
-    margin: 16rem auto;
+    padding: 16rem 0;
   }
 }
