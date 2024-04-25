@@ -15,12 +15,11 @@ function About() {
         <div className={styles['about-content-container']}>
           <h1>Who Am I?</h1>
           <p className={styles['about-paragraph']}>
-            My name is Nicholas Oliveira. I&apos;m a front-end web developer and
-            UX/UI designer located in Las Vegas, NV. Technologies that I
-            commonly use in my work include HTML/CSS, JavaScript, TypeScript,
-            React, Webflow, and WordPress. I also utilize Figma, FigJam, and
-            Adobe for design work such as creating mockups, prototyping, and
-            conducting user research. I have experience in every stage of the{' '}
+            I&apos;m a front-end engineer and UX/UI designer from Las Vegas, NV.
+            My passion is crafting intuitive user interfaces with pixel-perfect
+            precision. I keep users at the forefront of every design decision by
+            combining empathy with data-driven insights. My experience spans
+            every stage of the{' '}
             <Link href="https://aws.amazon.com/what-is/sdlc/">
               software development lifecycle.
             </Link>
