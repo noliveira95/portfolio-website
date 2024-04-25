@@ -4,10 +4,9 @@ import React, { useState, useEffect } from 'react';
 import styles from './Navbar.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '../../public/images/logos/NickOliveLogo3Cropped.png';
+import logo from '../../public/images/logos/NLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
-import Button from '../shared/Button/Button';
 import SocialButtonRow from '../shared/SocialButtonRow/SocialButtonRow';
 
 function Navbar() {
@@ -55,24 +54,22 @@ function Navbar() {
         >
           <ul className={styles['nav-links-list']}>
             <li className={styles['nav-link']} onClick={removeActive}>
-              <Link href="/#who-am-i">Who Am I</Link>
-            </li>
-            <li className={styles['nav-link']} onClick={removeActive}>
-              <Link href="/#my-skills">My Skills</Link>
+              <Link href="/#about-me">About Me</Link>
             </li>
             <li className={styles['nav-link']} onClick={removeActive}>
               <Link href="/#projects">Projects</Link>
             </li>
-            {/* <li className={styles["nav-link"]} onClick={removeActive}>
-              <Link href="/#testimonials">Testimonials</Link>
-            </li> */}
-            <li onClick={removeActive}>
+            <li className={styles['nav-link']} onClick={removeActive}>
+              <Link href="/#contact">Contact</Link>
+            </li>
+            {/* <li onClick={removeActive}>
               <Button
                 isLinkButton={true}
                 btnText="Contact Me"
-                btnLink="/#contact-me"
+                btnLink="/#contact"
+                className={styles['cta-button']}
               />
-            </li>
+            </li> */}
           </ul>
           <SocialButtonRow />
         </div>

@@ -1,15 +1,23 @@
-#contact {
-  padding: 80px 0;
+/* Contact styles */
+
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  scroll-margin-top: 16vh;
 }
 
-.contact-form-wrapper {
-  padding: 20px 0;
+.contact p {
+  margin: 8px 0;
+}
+
+.contact-form-container {
   width: 30rem;
 }
+
+/* ContactForm styles */
 
 .contact-form {
   display: flex;
@@ -18,16 +26,26 @@
   justify-content: center;
 }
 
-.contact-form-field {
+.contact-input-field,
+.contact-message-field {
   width: 100%;
   margin: 0.5rem;
-  border: 1px solid var(--color-base-pewter);
+  border: 1px solid var(--color-primary);
   border-radius: 4px;
   padding: 10px;
-  font-family: var(--font-dm-sans), "Roboto", sans-serif;
+  font-family: var(--font-dm-sans), 'Roboto', sans-serif;
 }
 
-.contact-form-field:active {
+.contact-input-field {
+  height: 40px;
+}
+
+.contact-message-field {
+  height: 80px;
+}
+
+.contact-input-field:active,
+.contact-message-field:active {
   border: 1px solid var(--color-primary);
 }
 
@@ -39,34 +57,44 @@
 
 .submit {
   width: 100%;
-  margin: 1rem;
-  border: 1px solid var(--color-primary);
-  border-radius: 4px;
+  height: 60px;
+  margin: 1rem 0;
+  border: 1px solid var(--color-secondary);
+  border-radius: 8px;
   padding: 12px;
-  background-color: var(--color-primary);
-  color: var(--color-base-pewter);
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-dm-sans), "Roboto", sans-serif;
+  font-family: var(--font-dm-sans), 'Roboto', sans-serif;
+  font-weight: 700;
 }
 
 .submit:hover {
-  background-color: var(--color-base-black);
-  color: var(--color-base-pewter);
-  border: 1px solid var(--color-base-black);
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  border: 1px solid var(--color-accent);
   cursor: pointer;
 }
 
 .submit:disabled {
-  background-color: var(--color-base-pewter);
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+  background-color: var(--color-disabled);
+  color: var(--color-disabled-text);
+  border: 1px solid var(--color-disabled);
   cursor: default;
 }
 
 @media screen and (max-width: 768px) {
-  .contact-form-wrapper {
+  /* Contact styles */
+  .contact-form-container {
     width: 20rem;
   }
 }
+
+/* @media screen and (max-width: 576px) and (max-height: 740px) { */
+/* Contact styles */
+/* .contact { */
+/* scroll-margin-top: -120px; */
+/* } */
+/* } */

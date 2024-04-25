@@ -1,44 +1,128 @@
-#about {
+/* About styles */
+
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
-  padding: 280px 20px 300px 20px;
+  gap: 6rem;
+  scroll-margin-top: 12vh;
 }
 
-.about-content {
+.about-me-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  max-width: 60rem;
+  gap: 2rem;
+}
+
+.about-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 40ch;
   padding: 0 20px;
 }
 
-.about-paragraph {
-  padding: 0 40px;
+.about-image-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
 }
 
-.cta {
-  margin-top: 60px;
+.about-image {
+  border-radius: 0 0 16px 16px;
+  object-fit: contain;
 }
 
-.cta-icon {
-  margin-left: 10px;
+.tools-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ToolsRow styles */
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  place-content: center;
+  gap: 32px;
+  margin-top: 0.5rem;
+  max-width: 60vw;
+}
+
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 160px;
+}
+
+.tool-image {
+  object-fit: contain;
+}
+
+.tool-name {
+  color: transparent;
+  font-weight: var(--fw-b);
+}
+
+.tool-item:hover .tool-name {
+  color: var(--color-secondary);
+}
+
+@media screen and (max-width: 1200px) {
+  /* About styles */
+  .about {
+    scroll-margin-top: 10vh;
+  }
+
+  .about-me-content {
+    flex-direction: column-reverse;
+  }
+
+  .about-content-container {
+    align-items: center;
+    text-align: center;
+    max-width: 50ch;
+  }
+
+  .about-image-container {
+    width: 240px;
+    height: 240px;
+  }
+
+  /* ToolsRow styles */
+  .tools {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .tool-item {
+    height: 140px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  #about {
-    padding: 80px 20px 132px 20px;
-  }
+  /* About styles */
   .about-content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .about-paragraph {
     padding: 0;
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* ToolsRow styles */
+  .tools {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
