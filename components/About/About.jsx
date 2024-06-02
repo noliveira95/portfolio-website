@@ -36,6 +36,7 @@ function About() {
             src={MyPic}
             alt="Picture of Nicholas"
             fill
+            sizes="(max-width: 768px) 80vw, 33vw"
           />
         </div>
       </div>

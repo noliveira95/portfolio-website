@@ -33,6 +33,7 @@ function Projects({
               src={currentProject.featuredImage}
               alt={currentProject.title}
               fill
+              sizes="(max-width: 768px) 80vw, 40vw"
             />
           </div>
           <div className={styles['project-info-container']}>
