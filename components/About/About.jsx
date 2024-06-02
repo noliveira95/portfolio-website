@@ -5,8 +5,6 @@ import Link from 'next/link';
 import MyPic from '../../public/images/AISelfieNoBg.png';
 import Button from '../shared/Button/Button';
 import ToolsRow from './ToolsRow';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 function About() {
   return (
