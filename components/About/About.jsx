@@ -21,7 +21,7 @@ function About() {
             combining empathy with data-driven insights. My experience spans
             every stage of the{' '}
             <Link href="https://aws.amazon.com/what-is/sdlc/">
-              software development lifecycle.
+              software development life cycle.
             </Link>
           </p>
           <Button
