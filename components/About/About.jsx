@@ -5,8 +5,6 @@ import Link from 'next/link';
 import MyPic from '../../public/images/AISelfieNoBg.png';
 import Button from '../shared/Button/Button';
 import ToolsRow from './ToolsRow';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 function About() {
   return (
@@ -21,7 +19,7 @@ function About() {
             combining empathy with data-driven insights. My experience spans
             every stage of the{' '}
             <Link href="https://aws.amazon.com/what-is/sdlc/">
-              software development lifecycle.
+              software development life cycle.
             </Link>
           </p>
           <Button
@@ -36,6 +34,7 @@ function About() {
             src={MyPic}
             alt="Picture of Nicholas"
             fill
+            sizes="(max-width: 768px) 80vw, 33vw"
           />
         </div>
       </div>
