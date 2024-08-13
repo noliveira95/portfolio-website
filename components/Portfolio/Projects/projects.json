@@ -24,11 +24,11 @@
   },
   {
     "id": 2,
-    "title": "Aurelius",
-    "description": "A Chrome extension that generates quotes from ancient Stoic philosophers. Built with React and TypeScript.",
+    "title": "Bemark",
+    "description": "A user-friendly Chrome extension for managing web bookmarks.",
     "client": null,
     "logo": null,
-    "url": "https://github.com/noliveira95/aurelius",
+    "url": "https://github.com/noliveira95/bemark",
     "url2": null,
     "cta": "View on GitHub",
     "cta2": null,
@@ -39,10 +39,9 @@
       "HTML",
       "CSS",
       "JavaScript",
-      "React",
-      "TypeScript"
+      "React"
     ],
-    "featuredImage": "/images/projects/Aurelius.png",
+    "featuredImage": "/images/projects/Bemark.png",
     "isActive": true,
     "projectType": "dev"
   },
@@ -68,5 +67,29 @@
     "featuredImage": "/images/projects/CommentMe.png",
     "isActive": true,
     "projectType": "design"
+  },
+  {
+    "id": 4,
+    "title": "Aurelius",
+    "description": "A Chrome extension that generates quotes from ancient Stoic philosophers.",
+    "client": null,
+    "logo": null,
+    "url": "https://github.com/noliveira95/aurelius",
+    "url2": null,
+    "cta": "View on GitHub",
+    "cta2": null,
+    "dateCompleted": null,
+    "skillsApplied": [
+      "Chrome Extension",
+      "APIs",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "TypeScript"
+    ],
+    "featuredImage": "/images/projects/Aurelius.png",
+    "isActive": true,
+    "projectType": "dev"
   }
 ]
