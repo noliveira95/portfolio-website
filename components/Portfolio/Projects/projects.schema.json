@@ -10,6 +10,8 @@
       "projectType": { "enum": ["dev", "design"] },
       "url": { "type": "string" },
       "url2": { "type": "string", "nullable": true },
+      "cta": { "type": "string" },
+      "cta2": { "type": "string", "nullable": true },
       "client": { "type": "string", "nullable": true },
       "logo": { "type": "string", "nullable": true },
       "dateCompleted": { "type": "string", "nullable": true }

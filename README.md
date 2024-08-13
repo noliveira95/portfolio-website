@@ -1,20 +1,27 @@
 # Overview
+
 This is the repository for my portfolio website. [Click here to see it live.](https://www.nickolive.com)
 
-# Technologies Used
+## Technologies Used
 
-## Front-end
+### Front-end
+
 - HTML/CSS
 - React/Next.js
 
-## Back-end
+### Back-end
+
 - JSON
 - JSON Type Definition
 - AJV
 - Vercel
 
- ## Forms
+### Forms
+
 - React Hook Form
 
-# Copyright
+<br>
+
+---
+
 © 2024 Nicholas J. Oliveira. All rights reserved.

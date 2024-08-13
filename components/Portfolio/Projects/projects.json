@@ -5,8 +5,10 @@
     "description": "Mobile design concept for an app that helps people find and support local musicians.",
     "client": null,
     "logo": "/images/logos/Locart.png",
-    "url": "https://www.figma.com/file/Moxf5Ael1dDkIfu9mYtjox/Locart?type=design&node-id=389%3A187&mode=design&t=cLf0I6ga9R1hMoPA-1",
-    "url2": "https://www.behance.net/gallery/192525569/Locart-A-UX-Case-Study",
+    "url": "https://www.behance.net/gallery/192525569/Locart-A-UX-Case-Study",
+    "url2": "https://www.figma.com/file/Moxf5Ael1dDkIfu9mYtjox/Locart?type=design&node-id=389%3A187&mode=design&t=cLf0I6ga9R1hMoPA-1",
+    "cta": "View Case Study",
+    "cta2": "View on Figma",
     "dateCompleted": null,
     "skillsApplied": [
       "Mobile App Design",
@@ -22,12 +24,60 @@
   },
   {
     "id": 2,
+    "title": "Bemark",
+    "description": "A user-friendly Chrome extension for managing web bookmarks.",
+    "client": null,
+    "logo": null,
+    "url": "https://github.com/noliveira95/bemark",
+    "url2": null,
+    "cta": "View on GitHub",
+    "cta2": null,
+    "dateCompleted": null,
+    "skillsApplied": [
+      "Chrome Extension",
+      "APIs",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React"
+    ],
+    "featuredImage": "/images/projects/Bemark.png",
+    "isActive": true,
+    "projectType": "dev"
+  },
+  {
+    "id": 3,
+    "title": "CommentMe!",
+    "description": "Design concept for a Chrome extension that streamlines the feedback process for web developers.",
+    "client": null,
+    "logo": "/images/logos/CommentMe.png",
+    "url": "https://www.figma.com/file/p0l6ljZb2kiwOBnxpZYHjl/CommentMe-v1?type=design&node-id=74%3A85&mode=design&t=u3cF8AfPq4xkPPME-1",
+    "url2": null,
+    "cta": "View on Figma",
+    "cta2": null,
+    "dateCompleted": null,
+    "skillsApplied": [
+      "Web App Design",
+      "UX/UI",
+      "Web App",
+      "Product Design",
+      "Design System",
+      "Figma"
+    ],
+    "featuredImage": "/images/projects/CommentMe.png",
+    "isActive": true,
+    "projectType": "design"
+  },
+  {
+    "id": 4,
     "title": "Aurelius",
-    "description": "A Chrome extension that generates quotes from ancient Stoic philosophers. Built with React and TypeScript.",
+    "description": "A Chrome extension that generates quotes from ancient Stoic philosophers.",
     "client": null,
     "logo": null,
     "url": "https://github.com/noliveira95/aurelius",
     "url2": null,
+    "cta": "View on GitHub",
+    "cta2": null,
     "dateCompleted": null,
     "skillsApplied": [
       "Chrome Extension",
@@ -41,26 +91,5 @@
     "featuredImage": "/images/projects/Aurelius.png",
     "isActive": true,
     "projectType": "dev"
-  },
-  {
-    "id": 3,
-    "title": "CommentMe!",
-    "description": "Design concept for a Chrome extension that streamlines the feedback process for web developers.",
-    "client": null,
-    "logo": "/images/logos/CommentMe.png",
-    "url": "https://www.figma.com/file/p0l6ljZb2kiwOBnxpZYHjl/CommentMe-v1?type=design&node-id=74%3A85&mode=design&t=u3cF8AfPq4xkPPME-1",
-    "url2": null,
-    "dateCompleted": null,
-    "skillsApplied": [
-      "Web App Design",
-      "UX/UI",
-      "Web App",
-      "Product Design",
-      "Design System",
-      "Figma"
-    ],
-    "featuredImage": "/images/projects/CommentMe.png",
-    "isActive": true,
-    "projectType": "design"
   }
 ]
