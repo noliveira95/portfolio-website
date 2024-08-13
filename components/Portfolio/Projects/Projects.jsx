@@ -45,21 +45,13 @@ function Projects({
               <Button
                 isExternalLinkButton={true}
                 btnLink={currentProject.url}
-                btnText={
-                  currentProject.projectType === 'dev'
-                    ? 'View on Github'
-                    : 'View on Figma'
-                }
+                btnText={currentProject.cta}
               />
               {currentProject.url2 && (
                 <Button
                   isExternalLinkButton={true}
                   btnLink={currentProject.url2}
-                  btnText={
-                    currentProject.projectType === 'dev'
-                      ? 'View Live'
-                      : 'View Case Study'
-                  }
+                  btnText={currentProject.cta2}
                   btnType="secondary"
                 />
               )}

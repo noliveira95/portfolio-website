@@ -7,6 +7,8 @@
     "logo": "/images/logos/Locart.png",
     "url": "https://www.figma.com/file/Moxf5Ael1dDkIfu9mYtjox/Locart?type=design&node-id=389%3A187&mode=design&t=cLf0I6ga9R1hMoPA-1",
     "url2": "https://www.behance.net/gallery/192525569/Locart-A-UX-Case-Study",
+    "cta": "View Case Study",
+    "cta2": "View on Figma",
     "dateCompleted": null,
     "skillsApplied": [
       "Mobile App Design",
@@ -28,6 +30,8 @@
     "logo": null,
     "url": "https://github.com/noliveira95/aurelius",
     "url2": null,
+    "cta": "View on GitHub",
+    "cta2": null,
     "dateCompleted": null,
     "skillsApplied": [
       "Chrome Extension",
@@ -50,6 +54,8 @@
     "logo": "/images/logos/CommentMe.png",
     "url": "https://www.figma.com/file/p0l6ljZb2kiwOBnxpZYHjl/CommentMe-v1?type=design&node-id=74%3A85&mode=design&t=u3cF8AfPq4xkPPME-1",
     "url2": null,
+    "cta": "View on Figma",
+    "cta2": null,
     "dateCompleted": null,
     "skillsApplied": [
       "Web App Design",
