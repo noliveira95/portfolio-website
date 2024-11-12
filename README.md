@@ -1,6 +1,6 @@
 # Overview
 
-This is the repository for my portfolio website. [Click here to see it live.](https://www.nickolive.com)
+This is the repository for my old portfolio website. [Click here to see it live.](https://portfolio-website-murex-delta.vercel.app/)
 
 ## Technologies Used
 
